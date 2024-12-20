@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*common*****************************************************/
+body {
+    font-family: 'NanumSquareLight';
+    font-family: 'NanumSquare';
+    font-family: 'NanumSquareBold';
+    font-family: 'NanumSquareExtraBold';
+    font-family: 'NanumSquareAcb';
+    font-family: 'NanumSquareAceb';
+    font-family: 'NanumSquareAcl';
+    font-family: 'NanumSquareAcr';
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* INDEX */
+/* 섹션 제목 공통 디자인 */
+.sec-tit {
+    display: inline-block;
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: 900;
+    background: linear-gradient(160deg, #00baf2, #3a5575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 투명 버튼 공통 디자인 */
+.more-clear {
+    display: inline-block;
+    letter-spacing: 3px;
+    padding: 8px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+/* 버튼 공통 디자인 */
+.more-btn {
+    display: inline-block;
+    letter-spacing: 3px;
+    padding: 8px 20px;
+    background-color: #3a5575;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.more-clear:hover,
+.more-btn:hover {
+    border-color: #00baf2;
+    color: #3a5575;
+    background-color: #00baf2;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+/* SUB-PAGE */
+section .sub-main {
+    height: 550px;
+    position: relative;
+    /* 서브페이지 타이틀 기준 */
+}
+
+section .sub-main .sub-tit {
+    font-size: 48px;
+    font-size: 3rem;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

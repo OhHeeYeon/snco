@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/* index*************************************** */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    position: relative; /* .video-box의 기준 */
+    /* outline: 2px solid red; */
+}
+
+main .active {
+    z-index: 1; /* 맨 앞에 보여질 슬라이드 */
+}
+
+main .video-box {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+main .video-box video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .video-box .main-txt {
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+}
+
+main .video-box .main-txt h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: bold;
+    border-bottom: 1px solid #00baf2;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+main .video-box .main-txt p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+section {
+    width: 100%;
+}
+
+section article {
+    /* margin-bottom: 100px; */ /* 와이? */
+}
+
+section .now-showing {
+    text-align: center;
+    margin: 170px auto;
+
+    position: relative; /* 배경 도형의 기준 */
+}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section .now-showing img:first-child {
+    position: absolute;
+    left: -65px;
+    top: -80px;
+    z-index: -1;
+    animation: rotate_image 10s linear infinite;
+}
+
+section .now-showing img:nth-child(2) {
+    position: absolute;
+    right: -10px;
+    bottom: -60px;
+    z-index: -1;
+    animation: rotate_image 10s linear infinite;
+}
+
+section .now-showing video {
+    display: block;
+    margin: 50px auto;
+
+    border: none;
+    width: 942px;
+    height: 540px;
+}
+
+.productions {
+    height: 1000px;
+    background-image: url(../img/snco_logo_bg.png), linear-gradient(to left, #fff 0%, #d2f5ff 40%, #7dace4 70%);
+    background-repeat: no-repeat;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.productions .prod-txt {
+    display: inline-block;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.productions .prod-txt p {
+    color: #3a5575;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+.productions .poster-wrap {
+    width: 300px;
+    margin-left: 20px;
+    float: right; /* position 값 고집하지 마라~~!! */
+}
+
+.poster-wrap .poster-box {
+    width: 300px;
+    float: left;
+
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #3a5575;
+    margin-bottom: 30px;
+
+    position: relative; /* .more의 기준 */
+}
+
+.poster-wrap .poster-box a {
+    transition: all 0.3s;
+}
+
+.poster-wrap .poster-box a:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.poster-wrap .poster-box a img {
+    display: block;
+    width: 100%;
+}
+
+.vision { /* 슬라이드 보이는 공간 */
+    width: 1400px;
+    text-align: center;
+    border-radius: 30px;
+    height: 680px;
+    margin: 170px auto 170px;
+    overflow: hidden;
+    position: relative; /* 각 슬라이드의 기준 */
+}
+
+.vision .slide {
+    width: 100%;
+    padding: 214px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.vision .slide:first-child {
+    background-image: url(../img/vision-people.jpg);
+}
+
+.vision .slide:nth-child(2) {
+    background-image: url(../img/vision-long.jpg);
+}
+
+.vision .slide:nth-child(3) {
+    background-image: url(../img/vision-educational.jpg);
+}
+
+.vision .slide:nth-child(4) {
+    background-image: url(../img/vision-innovative.jpeg);
+}
+
+.vision .active {
+    z-index: 1; /* silde 구현 위한 초기설정 */
+}
+
+.slide .sec-tit {
+    display: inline-block;
+}
+
+.slide .vision-txt {
+    margin: 50px 0;
+    color: #fff;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.board .sec-tit {
+    display: inline-block;
+    margin-bottom: 44px;
+}
+
+.board .board-txt {
+    display: block;
+    margin-bottom: 75px;
+}
+
+.board p {
+    display: inline-block;
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+.board .board-menu {
+    float: right;
+    line-height: 2rem;
+}
+
+.board .board-menu li {
+    float: left;
+}
+
+.board .board-menu li~li {
+    margin-left: 40px;
+}
+
+.board .board-menu li a {
+    display: block;
+    padding: 0 5px;
+    color: #3a5575;
+    position: relative; /* 밑줄 호버의 기준 */
+}
+
+.board .board-menu li a:hover {
+    font-weight: bold;
+}
+
+.board .board-menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #8fd3f4;
+}
+
+.board .board-menu li:hover a::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.board .news-wrap {
+    width: 1280px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #00baf2;
+    margin-bottom: 80px;
+}
+
+.board .news-wrap ul {
+    width: 200%;
+}
+
+.board .news-wrap ul .news-box {
+    float: left;
+    width: 11.71875%;
+}
+
+.board .news-wrap ul .news-box~.news-box {
+    margin-left: 0.8928571428571429%;
+}
+
+.board .news-wrap ul .news-box a .news-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.board .news-wrap ul .news-box a .news-img img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+}
+
+.board .news-wrap ul .news-box:hover a .news-img img {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: all 0.5s;
+}
+
+.board .news-wrap ul .news-box a .news-tit {
+    color: #333;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 25px;
+    word-break: keep-all;
+    transition: all 0.3s;
+}
+
+.board .news-wrap ul .news-box:hover a .news-tit {
+    color: #00baf2;
+    transition: all 0.3s;
+}
+
+.board .align {
+    text-align: center;
+    margin-bottom: 170px;
+}

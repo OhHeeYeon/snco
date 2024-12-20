@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* footer**************************************************** */
+footer {
+    padding: 34px 0;
+    width: 100%;
+    height: 200px;
+    background-color: #3a5575;
+    background-image: url(../img/snco_logo_white.png);
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+footer .inner {
+    position: relative;
+}
+
+footer .footer-txt {
+    line-height: 22px;
+}
+
+footer .sns {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .sns li {
+    float: left;
+}
+
+footer .sns li~li {
+    margin-left: 15px;
+}
+
+footer .sns li a img {
+    width: 50px;
+    display: block;
+}
