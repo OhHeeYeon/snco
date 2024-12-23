@@ -22,7 +22,6 @@ function fadeSlide() {
     //1번 슬라이드
     var firstSlide = $('.vision .slide').first();
 
-
     //2번 슬라이드
     var nextSlide = firstSlide.next();
 
@@ -40,6 +39,7 @@ function fadeSlide() {
 //BOARD tabmenu 효과
 $(document).ready(function () {
 
+    //클릭 안 한 상태에서 #news 내용 보이게 하기
     $('#news').show();
     $('.board-menu li a').click(function (e) {
 
