@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 서브 페이지 header */
+section .sub-main {
+    background: url(../img/about/aladdin_bg.PNG) no-repeat center/ cover; 
+}
+
+.sub-main h2 {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/* 알라딘 메뉴 공통 css */
+span {
+    display: block;
+}
+
+section p {
+    color: transparent;
+    background: url(../img/about/text-pattern.jpg) no-repeat center top/cover;
+    -webkit-background-clip: text;
+}
+
+.sub-menu {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.sub-menu ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.sub-menu ul li:hover a::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.sub-menu ul li a {
+    display: block;
+    color: #3a5575;
+    transition: all 0.5s;
+
+    position: relative;
+    /* 밑줄 호버의 기준 */
+}
+
+.sub-menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0px;
+    height: 2px;
+    margin: 1px 0 0;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 0;
+    background-color: #5B2B99;
+}
+
+.sub-menu ul li a:hover {
+    letter-spacing: 1px;
+    color: #5B2B99;
+    transition: all 0.5s;
+}

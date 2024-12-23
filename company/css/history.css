@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+/*HISTORY********************************************/
+/* 연표 공통 디자인 */
+.img-box {
+    width: 50%;
+}
+
+.txt-box {
+    width: 50%;
+}
+
+ul li {
+    margin-bottom: 140px;
+}
+
+ul li:nth-child(odd) div {
+    float: right;
+}
+
+ul li:nth-child(odd) .txt-box {
+    text-align: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+    position: relative;
+    /* 연표 원의 기준 */
+}
+
+ul li:nth-child(odd) .txt-box::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3a5575;
+    position: absolute;
+    top: 7px;
+    right: 0%;
+    transform: translateX(50%);
+}
+
+ul li:nth-child(odd) .img-box {
+    padding-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+    /* 연표 가로줄의 기준 */
+}
+
+ul li:nth-child(odd) .img-box::before {
+    content: "";
+    display: block;
+    width: 30px;
+    background: #00baf2;
+    height: 1px;
+    position: absolute;
+    top: 11px;
+    left: 0%;
+}
+
+
+ul li:nth-child(even) div {
+    float: left;
+}
+
+ul li:nth-child(even) .txt-box {
+    padding-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+    /* 연표 원의 기준 */
+}
+
+ul li:nth-child(even) .txt-box::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3a5575;
+    position: absolute;
+    top: 8px;
+    left: 0%;
+    transform: translateX(-50%);
+}
+
+ul li:nth-child(even) .img-box {
+    text-align: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+ul li:nth-child(even) .img-box::before {
+    content: "";
+    display: block;
+    width: 30px;
+    background: #00baf2;
+    height: 1px;
+    position: absolute;
+    top: 11px;
+    right: 0%;
+}
+
+ul li:last-child .img-box::before {
+    display: none;
+}
+
+ul li::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 연표 텍스트 공통 디자인 */
+ul li p span {
+    margin-bottom: 10px;
+}
+
+.title {
+    display: block;
+    color: #3a5575;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.local {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    display: block;
+    color: #00baf2;
+    opacity: 0.8;
+}
+
+.year {
+    color: #3a5575;
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+/*******************************************************/
+
+section .sub-main {
+    background: url(../img/about/company-header.jpg) no-repeat center top/cover;
+    margin-bottom: 120px;
+}
+
+article.history {
+    margin-bottom: 130px;
+}
+
+.history h3 {
+    text-align: center;
+}
+
+.history h3 .tit {
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: bold;
+    background: linear-gradient(160deg, #00baf2, #3a5575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(160deg, #00baf2, #3a5575);
+    border-image-slice: 1;
+}
+
+.history h3 .txt {
+    display: block;
+    color: #3a5575;
+}
+
+article .container {
+    position: relative;
+    /* 연표 줄의 기준 */
+}
+
+article .container .bg {
+    z-index: -1;
+}
+
+article .container .circle {
+    position: absolute;
+    left: 15%;
+    top: -6%;
+    z-index: -1;
+    animation: rotate_image 30s linear infinite;
+}
+
+article .container .circle_s {
+    position: absolute;
+    right: 11%;
+    top: 8%;
+    z-index: -1;
+    animation: rotate_image 30s linear infinite;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+article .container::before {
+    content: "";
+    display: block;
+    width: 1px;
+    background: linear-gradient(180deg, #00baf2, #3a5575);
+    height: 102%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+article .container ul {}
+
+article .container ul::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    top: -59px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #00baf2;
+    border-right: 1px solid #00baf2;
+}
+
+ul .box2024 {}
+
+ul .box2024 .img-box {}
+
+ul .box2024 .img-box img {}
+
+ul .box2024 .txt-box {}
+
+ul .box2024 .txt-box .year {}
+
+ul .box2024 .txt-box p {}
+
+ul .box2024 .txt-box p .title {}
+
+ul .box2024 .txt-box p .local {}
+
+ul .box2023 {}
+
+ul .box2023 .img-box {}
+
+ul .box2023 .img-box img {}
+
+ul .box2023 .txt-box {}
+
+ul .box2023 .txt-box .year {}
+
+ul .box2023 .txt-box p {}
+
+ul .box2023 .txt-box p .title {}
+
+ul .box2023 .txt-box p .local {}
+
+ul .box2022 {}
+
+ul .box2022 .img-box {}
+
+ul .box2022 .img-box img {}
+
+ul .box2022 .txt-box {}
+
+ul .box2022 .txt-box .year {}
+
+ul .box2022 .txt-box p {}
+
+ul .box2022 .txt-box p .title {}
+
+ul .box2022 .txt-box p .local {}
+
+ul .box2021 {}
+
+ul .box2021 .img-box {}
+
+ul .box2021 .img-box img {}
+
+ul .box2021 .txt-box {}
+
+ul .box2021 .txt-box .year {}
+
+ul .box2021 .txt-box p {}
+
+ul .box2021 .txt-box p .title {}
+
+ul .box2021 .txt-box p .local {}
+
+ul .box2020 {}
+
+ul .box2020 .img-box {}
+
+ul .box2020 .img-box img {}
+
+ul .box2020 .txt-box {}
+
+ul .box2020 .txt-box .year {}
+
+ul .box2020 .txt-box p {}
+
+ul .box2020 .txt-box p .title {}
+
+ul .box2020 .txt-box p .local {}
+
+ul .box2019 {}
+
+ul .box2019 .img-box {}
+
+ul .box2019 .img-box img {}
+
+ul .box2019 .txt-box {}
+
+ul .box2019 .txt-box .year {}
+
+ul .box2019 .txt-box p {}
+
+ul .box2019 .txt-box p .title {}
+
+ul .box2019 .txt-box p .local {}
+
+ul .box2018 {}
+
+ul .box2018 .img-box {}
+
+ul .box2018 .img-box img {}
+
+ul .box2018 .txt-box {}
+
+ul .box2018 .txt-box .year {}
+
+ul .box2018 .txt-box p {}
+
+ul .box2018 .txt-box p .title {}
+
+ul .box2018 .txt-box p .local {}
+
+ul .box2017 {}
+
+ul .box2017 .img-box {}
+
+ul .box2017 .img-box img {}
+
+ul .box2017 .txt-box {}
+
+ul .box2017 .txt-box .year {}
+
+ul .box2017 .txt-box p {}
+
+ul .box2017 .txt-box p .title {}
+
+ul .box2017 .txt-box p .local {}
+
+ul .box2016 {}
+
+ul .box2016 .img-box {}
+
+ul .box2016 .img-box img {}
+
+ul .box2016 .txt-box {}
+
+ul .box2016 .txt-box .year {}
+
+ul .box2016 .txt-box p {}
+
+ul .box2016 .txt-box p .title {}
+
+ul .box2016 .txt-box p .local {}
+
+ul .box2013 {}
+
+ul .box2013 .img-box {}
+
+ul .box2013 .img-box img {}
+
+ul .box2013 .txt-box {}
+
+ul .box2013 .txt-box .year {}
+
+ul .box2013 .txt-box p {}
+
+ul .box2013 .txt-box p .title {}
+
+ul .box2013 .txt-box p .local {}

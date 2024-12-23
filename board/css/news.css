@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+.container .news-wrap .news-box {
+    width: 32%;
+    float: left;
+}
+
+.container .news-wrap .news-box~.news-box {
+    margin-left: 2%;
+}
+
+.container .news-wrap .news-box:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.news-box {
+    transition: all 0.3s ease-out;
+}
+
+.news-box a {
+    display: block;
+}
+
+.news-box a .img-box {
+
+    height: 350px;
+    overflow: hidden;
+
+    position: relative;
+    /* 기사 썸네일의 기준 */
+}
+
+.news-box a .img-box img {
+    height: 100%;
+    transition: all 0.3s ease-out;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* margin: 0 auto; */
+}
+
+.news-box a:hover .img-box img {
+    /* 가운데를 기준으로 확대가 왜 안되냐..!!! */
+    transform: translate(-50%, -50%);
+    scale: 1.2;
+    transition: all 0.3s ease-out;
+}
+
+.news-box a .txt-box {
+    padding: 30px;
+    border-bottom: 1px solid #3a5575;
+    margin-bottom: 30px;
+}
+
+.news-box a:hover {
+    background-color: #dbf7ff;
+    transition: all 0.3s ease-out;
+}
+
+.news-box a .txt-box p span {
+    display: block;
+}
+
+.news-box a .txt-box p .category {
+    color: #3a5575;
+    font-size: 0.875rem;
+    height: 50%;
+}
+
+.news-box a .txt-box p .title {
+    color: #333;
+    margin: 20px 0;
+}
+
+.news-box a .txt-box p::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.news-box a .txt-box p .date {
+    color: #ccc;
+    font-size: 0.875rem;
+    float: right;
+}
+
+.btn {
+    text-align: center;
+    margin: 70px 0 100px;
+}

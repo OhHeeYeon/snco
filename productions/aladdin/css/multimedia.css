@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* MULTIMEDIA */
+section {
+    background: url(../img/tickets/aladdin_bg.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.multimedia {
+    background: url(../img/tickets/bg-gradient.png) no-repeat top/100%;
+}
+
+.multimedia .tabmenu {
+    margin-bottom: 80px;
+}
+
+.tabmenu ul {
+    text-align: center;
+}
+
+.tabmenu ul li {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #9747FF, #5B2B99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 선택된 탭메뉴 디자인 */
+.tabmenu ul li.on {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(160deg, #9747FF, #5B2B99);
+    border-image-slice: 1;
+}
+
+.tabmenu ul li:last-child {
+    margin-left: 300px;
+}
+
+.tabmenu ul li a {}
+
+.gallery {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .list {}
+
+.gallery .list .inner {
+    position: relative;
+}
+
+.gallery .list .swiper-wrapper {}
+
+.gallery .list .swiper-wrapper .swiper-slide {}
+
+.gallery .list .swiper-wrapper .swiper-slide img {
+    display: block;
+}
+
+.gallery .list .swiper-wrapper .swiper-slide video {
+    width: 100%;
+    display: block;
+}
+
+.gallery .list .btn {}
+
+.gallery .list .btn_prev {}
+
+.gallery .list .btn_next {}

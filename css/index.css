@@ -115,7 +115,7 @@ section .now-showing video {
     display: inline-block;
     width: 50%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
 }
 
@@ -163,7 +163,7 @@ section .now-showing video {
     text-align: center;
     border-radius: 30px;
     height: 680px;
-    margin: 170px auto 170px;
+    margin: 170px auto 0;
     overflow: hidden;
     position: relative; /* 각 슬라이드의 기준 */
 }
@@ -210,6 +210,30 @@ section .now-showing video {
     font-size: 1.75rem;
     line-height: 40px;
     letter-spacing: 2px;
+}
+
+.board {
+    padding-top: 170px;
+    overflow: hidden;
+
+    position: relative;
+    /* 도형 원의 기준 */
+}
+
+.board .inner .bg-circle {
+    position: absolute;
+    right: -10px;
+    top: 60px;
+    z-index: -1;
+    animation: rotate_image 10s linear infinite;
+}
+
+.board .inner .bg-circle_s {
+    position: absolute;
+    left: -60px;
+    bottom: 130px;
+    z-index: -1;
+    animation: rotate_image 10s linear infinite;
 }
 
 .board .sec-tit {
@@ -263,7 +287,19 @@ section .now-showing video {
     transition: all 0.2s ease-in-out;
     transition-duration: 0.3s;
     opacity: 0;
-    background-color: #8fd3f4;
+    background-color: #00baf2;
+}
+
+.board .board-menu li.on a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    opacity: 0;
+    background-color: #00baf2;
 }
 
 .board .board-menu li:hover a::after {
@@ -271,25 +307,19 @@ section .now-showing video {
     opacity: 1;
 }
 
-.board .news-wrap {
-    width: 1280px;
-    overflow: hidden;
+.board .news-wrap ul {
     padding-bottom: 50px;
     border-bottom: 1px solid #00baf2;
     margin-bottom: 80px;
 }
 
-.board .news-wrap ul {
-    width: 200%;
-}
-
 .board .news-wrap ul .news-box {
     float: left;
-    width: 11.71875%;
+    width: 23.4375%;
 }
 
 .board .news-wrap ul .news-box~.news-box {
-    margin-left: 0.8928571428571429%;
+    margin-left: 2.083%;
 }
 
 .board .news-wrap ul .news-box a .news-img {

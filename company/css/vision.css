@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/*VISION***********************************************/
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+section .sub-main {
+    background: url(../img/about/company-header.jpg) no-repeat center top/cover;
+    margin-bottom: 120px;
+}
+
+.vision-top h3 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.vision-top h3 .tit {
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: bold;
+    background: linear-gradient(160deg, #00baf2, #3a5575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(160deg, #00baf2, #3a5575);
+    border-image-slice: 1;
+}
+
+.vision-top h3 .txt {
+    display: block;
+    color: #3a5575;
+}
+
+.vision-top .vision-wrap {
+    margin: 0 auto 150px;
+    max-width: 1200px;
+}
+
+.vision-top .vision-wrap .vision-box {
+    width: 21.66666666667%;
+    float: left;
+}
+
+.vision-top .vision-wrap .vision-box~.vision-box {
+    margin-left: 4.4444%;
+}
+
+.vision-box .num {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(160deg, #00baf2, #3a5575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vision-box .circle {
+    width: 260px;
+    height: 260px;
+    border: 1px solid #00baf2;
+    border-radius: 50%;
+    text-align: center;
+
+    position: relative;
+    /* 원 내용의 기준 */
+}
+
+.vision-box .circle a {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vision-box .circle a p {
+    background: linear-gradient(160deg, #00baf2, #3a5575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vision-box .circle a p .icon {
+    margin-bottom: 20px;
+}
+
+.vision-box .circle a p .vision-eng {
+    display: block;
+}
+
+.vision-box .vision-ko {
+    font-weight: 600;
+    color: #3a5575;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vision-main {
+    margin-bottom: 150px;
+    height: 770px;
+    /* height:100%가 왜 적용 안되는 걸까? */
+
+    position: relative;
+    /* txt-box의 기준 */
+}
+
+.vision-main h4 {
+    font-size: 64px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #3a5575;
+    margin-bottom: 30px;
+}
+
+.vision-main:nth-child(even) h4 {
+    text-align: right;
+}
+
+.vision-main .img-box {
+    width: 70%;
+}
+
+.vision-main:nth-child(odd) .img-box {
+    position: absolute;
+    right: 0;
+}
+
+.vision-main .img-box img {
+    width: 100%;
+}
+
+.vision-main .txt-box {
+}
+
+/* float right left로 inner 안에서 배열 어떻게... */
+#people .txt-box p {
+    position: absolute;
+    bottom: 0;
+}
+
+#long .txt-box p {
+    position: absolute;
+    right: 6%;
+    bottom: 7%;
+}
+
+#educational .txt-box p {
+    position: absolute;
+    bottom: -5%;
+}
+
+#innovative .img-box {
+    position: absolute;
+    bottom: 0;
+}
+
+#innovative .txt-box p {
+    position: absolute;
+    top: 12%;
+    right: 6%;
+}
+
+.vision-main .txt-box p {
+    width: 40%;
+    line-height: 30px;
+    background-color: #3a5575;
+    color: #fff;
+    padding: 40px 50px;
+}

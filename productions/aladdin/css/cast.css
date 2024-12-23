@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* 알라딘 캐스트 */
+
+/* 공통 디자인 *********************************************************/
+section {
+    background: url(../img/about/aladdin_bg.jpeg) no-repeat center;
+    background-attachment: fixed;
+}
+
+article {
+    text-align: center;
+}
+
+article ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+article ul li {
+    float: left;
+}
+
+.ment p {
+    margin: 100px auto 70px;
+    word-break: keep-all;
+    width: 80%;
+}
+
+.ment p .top {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 50px;
+}
+
+.ment p .bottom {
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.ment img {
+    width: 20%;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+}
+
+.cast-board .cast-wrap .cast-box {
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.role {
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+/**********************************************************************/
+.title-role {
+    background: url(../img/cast/bg-gradient.png) no-repeat top/100%;
+}
+
+.title-role .video-box {
+    max-width: 1200px;
+}
+
+.title-role .video-box video {
+    width: 100%;
+}
+
+.title-role .ment img {
+    margin-bottom: 150px;
+}
+
+.title-role .cast-board {
+    max-width: 760px;
+}
+
+.title-role .cast-board .cast-box .profile {
+    width: 31.5789%;
+}
+
+.title-role .cast-board .cast-box .profile~.profile {
+    margin-left: 2.63165%;
+}
+
+.sub-role .cast-board {
+    margin: 150px auto;
+    max-width: 760px;
+}
+
+.sub-role .cast-board .cast-box .profile:first-child {
+    width: 31.5789%;
+    margin-left: 17.105275%;
+}
+
+.sub-role .cast-board .cast-box .profile:last-child {
+    width: 31.5789%;
+    margin-right: 17.105275%;
+}
+
+.sub-role .cast-board .cast-box .profile~.profile {
+    margin-left: 2.63165%;
+}
+
+.sub-role .cast-board #one-cast {
+    margin: 0 ;
+}
+
+.sub-role .cast-board #one-cast .profile {
+    width: 31.5789%;
+}
+
+.sub-role .cast-board #one-cast .profile~.profile {
+    margin-left: 2.63165%;
+}
+
+.sub-role .cast-board #one-cast .profile:first-child {
+    width: 31.5789%;
+    margin-left: 0;
+}
+
+.sub-role .cast-board #one-cast .profile:last-child {
+    width: 31.5789%;
+    margin-right: 0;
+}
+
+.ensemble {
+    padding-bottom: 240px;
+}
+
+.ensemble .cast-board {
+    max-width: 1020px;
+}
+
+.ensemble .cast-board .cast-box .profile {
+    width: 23.5294%;
+}
+
+.ensemble .cast-board .cast-box .profile~.profile {
+    margin-left: 1.8807%;
+}
+
+.ensemble .cast-board .cast-box:last-child .profile:first-child {
+    margin-left: 12.8252%;
+}
+
+.ensemble .cast-board .cast-box:last-child .profile:last-child {
+    margin-right: 12.8252%;
+}

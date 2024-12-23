@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/* 알라딘 공연정보 */
+
+/* 공통 디자인 *********************************************************/
+.tit {
+    font-size: 42px;
+    font-size: 2.625rem;
+    font-weight: bold;
+}
+
+.des {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.txt-box {
+    width: 50%;
+}
+
+.img-box {
+    width: 50%;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+}
+
+/**********************************************/
+section {
+    background: url(../img/about/aladdin_bg.jpeg) no-repeat center;
+    background-attachment: fixed;
+}
+
+.about-main {
+    background-color: #fff;
+    position: relative;
+    /* .info의 기준 */
+}
+
+.about-main .poster-box {
+    width: 40%;
+    float: left;
+}
+
+.about-main .poster-box img {
+    width: 100%;
+    display: block;
+}
+
+.about-main .info {
+    width: 55%;
+    margin-left: 5%;
+
+    float: right;
+}
+
+.about-main .info h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3a5575;
+    margin-bottom: 30px;
+}
+
+.about-main .info table tr {
+    height: 40px;
+}
+
+.about-main .info table tr th {
+    width: 23.58490566038%;
+    color: #3a5575;
+    text-align: left;
+}
+
+.about-main .info table tr td {
+    width: 76.41509433962%;
+    color: #333;
+    line-height: 30px;
+}
+
+.promo {
+    background: url(../img/about/bg-gradient.png) no-repeat top/100%;
+    padding-top: 150px;
+}
+
+.promo .video-box {
+
+}
+
+.promo .video-box video {
+    width: 100%;
+    display: block;
+}
+
+.promo .ment {
+    text-align: center;
+}
+
+.promo .ment>.top {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 130px 0;
+}
+
+.promo .ment>.bottom {
+    font-size: 2.375rem;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+
+.promo .ment img {
+    width: 15%;
+    margin-bottom: 200px;
+}
+
+.promo .about1 {
+    position: relative;
+    /* .txt-box의 기준 */
+}
+
+.promo .about1 .txt-box {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.promo .about1 .txt-box .press {
+    text-align: center;
+}
+
+.promo .about1 .txt-box .press~.press {
+    margin-top: 40px;
+}
+
+.promo .about1 .txt-box .press .review-ko {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.promo .about1 .txt-box .press .review-eng {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.promo .about1 .txt-box .press .media {
+    font-weight: 100;
+    color: #fff;
+}
+
+.promo .about1 .ment {
+    margin: 250px 0;
+}
+
+.promo .about1 .ment p {
+    display: inline-block;
+}
+
+.promo .about1 .ment p .top {
+    font-size: 1.875rem;
+    margin-bottom: 20px;
+}
+
+.promo .about1 .ment p .bottom {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.enjoy .about2 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /* .txt-box와 .img-box의 기준 */
+}
+
+.enjoy .about2 .txt-box {
+    /* float: left; */
+    text-align: center;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.enjoy .about2 .txt-box .tit {
+    margin-bottom: 40px;
+}
+
+.enjoy .about2 .txt-box .des {
+    width: 56%;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+
+.enjoy .about2 .img-box {
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.enjoy .about3 {
+    margin: 180px 0 250px;
+    background: url(../img/about/about3.png) no-repeat center bottom/cover;
+    width: 100%;
+    height: 850px;
+
+    position: relative;
+    /* .des의 기준 */
+}
+
+.enjoy .about3 .des {
+    width: 50%;
+    text-align: center;
+    word-break: keep-all;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.record {
+    text-align: center;
+}
+
+.record .tit {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.record .score-wrap {
+    max-width: 1200px;
+}
+
+.record .score-wrap .score-box {
+    float: left;
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.record .score-wrap .score-box~.score-box {
+    margin-left: 12.5%;
+}
+
+.record .score-wrap .score-box:nth-child(4) {
+    margin-left: 18.5%;
+}
+
+.record .score-wrap .score-box .circle {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/about/circle.svg);
+    margin-bottom: 25px;
+
+    position: relative;
+    /* .score의 기준 */
+}
+
+.record .score-wrap .score-box .circle .score {
+    font-size: 2.25rem;
+    font-weight: bold;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.record .score-wrap .score-box .des {
+    word-break: keep-all;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.record .about4 {
+    margin-top: 170px;
+    width: 100%;
+    height: 900px;
+    background: url(../img/about/about4.png) no-repeat center 10% /cover;
+}
+
+.record .about4 .des {
+    width: 60%;
+    margin: 0 auto 90px;
+    word-break: keep-all;
+}

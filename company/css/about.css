@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/*ABOUT********************************************************/
+html,body {
+    height: 100%;
+}
+
+
+/* 텍스트 박스 공통 디자인 */
+.txt-box {
+    width: 40%;
+}
+
+/* 본문 타이틀 공통 디자인 */
+.about-tit {
+    font-weight: 900;
+    font-size: 300px;
+    font-size: 18.75rem;
+    color: #eeeeee80;
+}
+
+/* 본문 내용 공통 디자인 */
+.about-txt {
+    color: #333;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 32px;
+    word-break: keep-all;
+}
+
+/* 본문 이미지박스 공통 디자인 */
+.img-box {
+    width: 50%;
+}
+
+.img-box img {
+    display: block;
+}
+
+/**********************************************************/
+section~section {
+    height: 100%;
+}
+
+section .sub-main {
+    background: url(../img/about/company-header.jpg) no-repeat center top/cover;
+}
+
+section.about {
+    background: url(../img/about/snco_bg.png) no-repeat right 15%;
+
+    position: relative;
+    /* .intro의 기준 */
+}
+
+.about .intro {
+    position: absolute;
+    bottom: 140px;
+}
+
+.about .intro h3 {
+    color: #3a5575;
+    font-size: 64px;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.worldwide .about-box {
+    position: relative;
+}
+
+.worldwide .img-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.worldwide .img-box img {
+    width: 100%;
+}
+
+.all-generation {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.all-generation .about-tit {
+    text-align: right;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    /* 이미지 뒤로 배치 */
+}
+
+.all-generation .inner {
+
+}
+
+.all-generation .img-box {
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+}
+
+.all-generation .img-box img {
+    width: 100%;
+}
+
+.all-generation .txt-box {
+    float: right;
+}
+
+.global .global-box1 {
+    position: relative;
+    /* img-box의 기준 */
+}
+
+.global .global-box1 .img-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.global .global-box1 .img-box img {
+    width: 100%;
+}
+
+.global-box2 {
+    height: 100%;
+    position: relative;
+
+    background: url(../img/about/Disney_Theatrical-Grp-_logo.png) no-repeat;
+    background-position: right bottom;
+}
+
+.global-box2 .img-box {
+    float: left;
+}
+
+.global-box2 .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.global-box2 .txt-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.global-box3 {
+    padding-top: 200px;
+    position: relative;
+    /* .txt-box의 기준 */
+}
+
+.global-box3 .img-box {
+    float: right;
+}
+
+.global-box3 .img-box img {
+    width: 100%;
+}
+
+.global-box3 .txt-box {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}

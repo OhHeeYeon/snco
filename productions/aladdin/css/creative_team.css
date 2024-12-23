@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* 알라딘 크리에이티브 팀 */
+
+/* 공통 디자인 *********************************************************/
+article ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+article ul li {
+    float: left;
+}
+
+article .creative-board {
+    max-width: 1020px;
+}
+
+.ment p {
+    margin: 100px auto 70px;
+    word-break: keep-all;
+    width: 80%;
+}
+
+.ment p .top {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 50px;
+}
+
+.ment p .bottom {
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.ment img {
+    width: 20%;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+}
+
+.creative-board .creative-wrap .creative-box {
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.role {
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+/**********************************************************************/
+section {
+    background: url(../img/about/aladdin_bg.jpeg) no-repeat center;
+    background-attachment: fixed;
+}
+
+article {
+    text-align: center;
+}
+
+.creative {
+    margin-bottom: 150px;
+    background: url(../img/creative/bg-gradient.png) no-repeat top/100%;
+}
+
+.creative .video-box {
+    max-width: 1200px;
+}
+
+.creative .video-box video {
+    width: 100%;
+}
+
+.creative .ment img {
+    margin-bottom: 150px;
+}
+
+.creative .creative-board .creative-box .profile {
+    width: 23.5294%;
+}
+
+.creative .creative-board .creative-box .profile~.profile {
+    margin-left: 1.8807%;
+}
+
+.creative .creative-board .creative-box:last-child .profile:first-child {
+    margin-left: 25.4101%;
+}
+
+.creative .creative-board .creative-box:last-child .profile:last-child {
+    margin-right: 25.4101%;
+}
+
+.support {
+    padding-bottom: 250px;
+}
+
+.support .creative-board .creative-box .profile {
+    width: 23.5294%;
+}
+
+.support .creative-board .creative-box .profile~.profile {
+    margin-left: 1.8807%;
+}
+
+.support .creative-board .creative-box .profile:first-child {
+    margin-left: 12.8252%;
+}
+
+.support .creative-board .creative-box .profile:last-child {
+    margin-right: 12.8252%;
+}
+
+.support .creative-board .creative-box:last-child .profile:first-child {
+    margin-left: 25.4101%;
+}
+
+.support .creative-board .creative-box:last-child .profile:last-child {
+    margin-right: 25.4101%;
+}
