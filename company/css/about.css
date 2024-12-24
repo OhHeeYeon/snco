@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 /*ABOUT********************************************************/
-html,body {
+html,
+body {
     height: 100%;
 }
 
@@ -9,14 +10,6 @@ html,body {
 /* 텍스트 박스 공통 디자인 */
 .txt-box {
     width: 40%;
-}
-
-/* 본문 타이틀 공통 디자인 */
-.about-tit {
-    font-weight: 900;
-    font-size: 300px;
-    font-size: 18.75rem;
-    color: #eeeeee80;
 }
 
 /* 본문 내용 공통 디자인 */
@@ -66,15 +59,31 @@ section.about {
     margin-bottom: 80px;
 }
 
+.worldwide {
+    background: url(../img/about/WORLDWIDE.png) no-repeat;
+}
+
 .worldwide .about-box {
+    height: 100%;
+
     position: relative;
+    /* 텍스트와 이미지의 기준 */
+}
+
+.worldwide .about-box .about-txt {
+    width: 30%;
+
+    position: absolute;
+    bottom: 130px;
 }
 
 .worldwide .img-box {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 100px;
+
+    border-top-left-radius: 200px;
+    overflow: hidden;
 }
 
 .worldwide .img-box img {
@@ -82,30 +91,28 @@ section.about {
 }
 
 .all-generation {
+    background: url(../img/about/ALL_GENERATION.png) no-repeat;
+    background-position: right top;
     width: 100%;
     height: 100%;
 
+    margin-bottom: 100px;
+}
+
+.all-generation .about-box {
+    height: 100%;
+
     position: relative;
-}
-
-.all-generation .about-tit {
-    text-align: right;
-
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    /* 이미지 뒤로 배치 */
-}
-
-.all-generation .inner {
-
+    /* 텍스트 박스와 이미지의 기준 */
 }
 
 .all-generation .img-box {
     position: absolute;
     bottom: 0;
-    width: 35%;
+    width: 50%;
+
+    border-top-right-radius: 200px;
+    overflow: hidden;
 }
 
 .all-generation .img-box img {
@@ -113,18 +120,35 @@ section.about {
 }
 
 .all-generation .txt-box {
-    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+.global {
+    margin-bottom: 100px;
 }
 
 .global .global-box1 {
+    background: url(../img/about/GLOBAL_NETWORK.png) no-repeat;
+    height: 100%;
     position: relative;
-    /* img-box의 기준 */
+    /* 텍스트 박스와 이미지의 기준 */
+}
+
+.global .global-box1 .txt-box {
+    position: absolute;
+    bottom: 140px;
+    width: 30%;
 }
 
 .global .global-box1 .img-box {
     position: absolute;
     right: 0;
     bottom: 0;
+
+    border-top-left-radius: 200px;
+    overflow: hidden;
 }
 
 .global .global-box1 .img-box img {
@@ -134,13 +158,19 @@ section.about {
 .global-box2 {
     height: 100%;
     position: relative;
+    /* 텍스트박스의 기준 */
 
     background: url(../img/about/Disney_Theatrical-Grp-_logo.png) no-repeat;
     background-position: right bottom;
 }
 
 .global-box2 .img-box {
-    float: left;
+    height: 100%;
+    border-top-right-radius: 200px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
 }
 
 .global-box2 .img-box img {
@@ -149,10 +179,11 @@ section.about {
 }
 
 .global-box2 .txt-box {
+    width: 30%;
+
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-30%);
+    right: 15%;
+    top: 55%;
 }
 
 .global-box3 {

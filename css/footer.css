@@ -2,41 +2,56 @@
 
 /* footer**************************************************** */
 footer {
-    padding: 34px 0;
+    padding: 50px 0;
     width: 100%;
-    height: 200px;
     background-color: #3a5575;
     background-image: url(../img/snco_logo_white.png);
     background-repeat: no-repeat;
-    background-size: auto 200px;
-    color: #fff;
-    box-sizing: border-box;
+    background-size: auto 100%;
 }
 
-footer .inner {
-    position: relative;
-}
-
-footer .footer-txt {
-    line-height: 22px;
-}
-
-footer .sns {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-footer .sns li {
+footer .left {
     float: left;
+    width: 40%;
 }
 
-footer .sns li~li {
-    margin-left: 15px;
+footer .left .p-group {
+    margin-bottom: 20px;
 }
 
-footer .sns li a img {
-    width: 50px;
+footer .left .p-group p {
+    font-family: 'NanumSquare';
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-right: 16px;
+}
+
+footer .left .p-group p:first-child {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
     display: block;
+}
+
+footer .left .p-group p span {
+    margin-right: 6px;
+    font-family: 'NanumsquareExtraBold';
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .left .copy {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .right {
+    float: right;
+}
+
+footer .right ul li {
+    display: inline-block;
+}
+
+footer .right ul li~li {
+    margin-left: 10px;
 }

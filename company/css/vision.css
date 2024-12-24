@@ -7,6 +7,10 @@ body {
     height: 100%;
 }
 
+section:nth-child(1)~section {
+    height: 100%;
+}
+
 section .sub-main {
     background: url(../img/about/company-header.jpg) no-repeat center top/cover;
     margin-bottom: 120px;
@@ -98,8 +102,6 @@ section .sub-main {
 
 .vision-main {
     margin-bottom: 150px;
-    height: 770px;
-    /* height:100%가 왜 적용 안되는 걸까? */
 
     position: relative;
     /* txt-box의 기준 */

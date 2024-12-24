@@ -93,13 +93,18 @@ section .now-showing img:nth-child(2) {
     animation: rotate_image 10s linear infinite;
 }
 
+section .now-showing .spot {
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 section .now-showing video {
+    width: 100%;
     display: block;
     margin: 50px auto;
 
-    border: none;
-    width: 942px;
-    height: 540px;
+    border-radius: 30px;
 }
 
 .productions {
