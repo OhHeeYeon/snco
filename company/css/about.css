@@ -158,14 +158,13 @@ section.about {
 .global-box2 {
     height: 100%;
     position: relative;
-    /* 텍스트박스의 기준 */
+    /* 텍스트박스와 rug 로고의 기준 */
 
     background: url(../img/about/Disney_Theatrical-Grp-_logo.png) no-repeat;
     background-position: right bottom;
 }
 
 .global-box2 .img-box {
-    height: 100%;
     border-top-right-radius: 200px;
     overflow: hidden;
 
@@ -176,6 +175,12 @@ section.about {
 .global-box2 .img-box img {
     width: 100%;
     height: 100%;
+}
+
+.global-box2>img {
+    position: absolute;
+    right: 25%;
+    z-index: -1;
 }
 
 .global-box2 .txt-box {

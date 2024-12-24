@@ -1,14 +1,9 @@
 @charset "utf-8";
 
 /* 뉴스레터 */
-
-/* 공통 디자인**********************************************************/
 span {
     display: block;
 }
-
-
-/***********************************************************************/
 
 section {
     overflow: hidden;
@@ -25,18 +20,6 @@ section .sub-main {
 .newsletter-main .inner {
     overflow: hidden;
 }
-
-/* .newsletter-main .inner .left {
-    height: 100%;
-    position: absolute;
-    left: 0;
-}
-
-.newsletter-main .inner .right {
-    position: absolute;
-    right: 0;
-    top: 0;
-} */
 
 .newsletter-main .logo_slide {
     width: 200%;
@@ -86,24 +69,27 @@ section .sub-main {
 }
 
 .newsletter-main .benefit .benefit-box {
-    width: 260px;
+    width: 32%;
     float: left;
 }
 
 .newsletter-main .benefit .benefit-box~.benefit-box {
-    margin-left: 5.1725%;
+    margin-left: 2%;
 }
 
 .benefit-box .circle {
-    width: 260px;
-    height: 260px;
+    margin: 0 auto;
+    width: 210px;
+    height: 210px;
     background: url(../img/circle.svg) no-repeat center;
+    background-size: 100%;
 
     position: relative;
     /* icon의 기준 */
 }
 
 .benefit-box .circle .icon {
+    width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -122,13 +108,12 @@ section .sub-main {
 }
 
 .subscribe fieldset {
+    background-color: #d3f5ff;
+    padding: 50px;
     border: none;
+    border-radius: 30px;
     width: 50%;
 }
-
-.subscribe fieldset form {}
-
-form .info-box {}
 
 form .info-box h3 {
     font-weight: bold;
@@ -138,7 +123,7 @@ form .info-box h3 {
 }
 
 form .info-box .info {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 form .info-box .info p {
@@ -163,11 +148,6 @@ form .info-box .agree label {
     color: #999;
 }
 
-form .input-box {
-    width: 540px;
-    margin: 0 auto;
-}
-
 form .input-box .personal .line {
     width: 100%;
     height: 45px;
@@ -175,11 +155,14 @@ form .input-box .personal .line {
 }
 
 form .input-box .personal .line label {
+    color: #333;
     display: inline-block;
     width: 15%;
 }
 
 form .input-box .personal .line input {
+    font-size: 1.125rem;
+    padding-left: 15px;
     box-sizing: border-box;
     border: 1px solid #00baf2;
     border-radius: 10px;
@@ -188,12 +171,9 @@ form .input-box .personal .line input {
     height: 100%;
 }
 
-form .input-box .personal .line input:hover {
-    
-}
-
-form .input-box .button {
-    width: 540px;
+form .input-box .personal .line input:focus {
+    outline: 2px solid #00baf2;
+    color: #3a5575;
 }
 
 form .input-box .button li {

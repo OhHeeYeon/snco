@@ -7,10 +7,6 @@ body {
     height: 100%;
 }
 
-section:nth-child(1)~section {
-    height: 100%;
-}
-
 section .sub-main {
     background: url(../img/about/company-header.jpg) no-repeat center top/cover;
     margin-bottom: 120px;
@@ -101,6 +97,7 @@ section .sub-main {
 }
 
 .vision-main {
+    height: 100%;
     margin-bottom: 150px;
 
     position: relative;
@@ -132,41 +129,46 @@ section .sub-main {
     width: 100%;
 }
 
-.vision-main .txt-box {
-}
-
-/* float right left로 inner 안에서 배열 어떻게... */
-#people .txt-box p {
-    position: absolute;
-    bottom: 0;
-}
-
-#long .txt-box p {
-    position: absolute;
-    right: 6%;
-    bottom: 7%;
-}
-
-#educational .txt-box p {
-    position: absolute;
-    bottom: -5%;
-}
-
-#innovative .img-box {
-    position: absolute;
-    bottom: 0;
-}
-
-#innovative .txt-box p {
-    position: absolute;
-    top: 12%;
-    right: 6%;
-}
-
 .vision-main .txt-box p {
     width: 40%;
     line-height: 30px;
     background-color: #3a5575;
     color: #fff;
     padding: 40px 50px;
+}
+
+#people .txt-box p {
+    position: absolute;
+    right: 16%;
+    bottom: -2%;
+}
+
+#long .txt-box p {
+    position: absolute;
+    left: 16%;
+    bottom: 5%;
+}
+
+#educational {
+    margin-bottom: 200px;
+}
+
+#educational .txt-box p {
+    position: absolute;
+    right: 16%;
+    bottom: -5%;
+}
+
+#innovative {
+    margin-bottom: 230px;
+}
+
+#innovative .img-box {
+    position: absolute;
+    bottom: -6%;
+}
+
+#innovative .txt-box p {
+    position: absolute;
+    left: 16%;
 }

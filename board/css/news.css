@@ -3,6 +3,7 @@
 .container .news-wrap .news-box {
     width: 32%;
     float: left;
+    transition: all 0.3s ease-out;
 }
 
 .container .news-wrap .news-box~.news-box {
@@ -13,16 +14,11 @@
     margin-left: 0;
 }
 
-.news-box {
-    transition: all 0.3s ease-out;
-}
-
 .news-box a {
     display: block;
 }
 
 .news-box a .img-box {
-
     height: 350px;
     overflow: hidden;
 
@@ -31,21 +27,17 @@
 }
 
 .news-box a .img-box img {
-    height: 100%;
+    width: 100%;
     transition: all 0.3s ease-out;
 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
-    /* margin: 0 auto; */
 }
 
 .news-box a:hover .img-box img {
-    /* 가운데를 기준으로 확대가 왜 안되냐..!!! */
-    transform: translate(-50%, -50%);
-    scale: 1.2;
+    transform: translate(-50%, -50%) scale(1.2);
     transition: all 0.3s ease-out;
 }
 
