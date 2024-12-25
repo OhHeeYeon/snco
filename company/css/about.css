@@ -110,6 +110,7 @@ section.about {
     position: absolute;
     bottom: 0;
     width: 50%;
+    height: 100%;
 
     border-top-right-radius: 200px;
     overflow: hidden;
@@ -138,7 +139,8 @@ section.about {
 
 .global .global-box1 .txt-box {
     position: absolute;
-    bottom: 140px;
+    left: 20%;
+    bottom: 15%;
     width: 30%;
 }
 
@@ -162,6 +164,7 @@ section.about {
 
     background: url(../img/about/Disney_Theatrical-Grp-_logo.png) no-repeat;
     background-position: right bottom;
+    background-size: 25%;
 }
 
 .global-box2 .img-box {
@@ -178,6 +181,7 @@ section.about {
 }
 
 .global-box2>img {
+    width: 25%;
     position: absolute;
     right: 25%;
     z-index: -1;
@@ -192,7 +196,7 @@ section.about {
 }
 
 .global-box3 {
-    padding-top: 200px;
+    padding-top: 30px;
     position: relative;
     /* .txt-box의 기준 */
 }
