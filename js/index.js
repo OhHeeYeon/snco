@@ -29,7 +29,6 @@ function videoSlide() {
 }
 
 //PRODUCTIONS 왼쪽 wrap 플로우 효과
-//달그락거려.... padding으로 하면 괜찮긴 한데 모양이... 'margin-bottom'+'30'+'px'?????
 var flowPosterL; //인터벌 담을 변수
 
 $(document).ready(function(){
@@ -51,7 +50,7 @@ function flowL() {
     var boxHeightL = $('.poster-wrap.left li').first().outerHeight();
 
     // 이동한 픽셀수(up)가 li 하나의 너비보다 커졌을 때 -> 다음을 위한 준비!
-    if (up > boxHeightL) {
+    if (up > (boxHeightL/* +'margin-bottom'+'30px' */)) {
         //(위로 흘러가서)사라진 첫번째 li를 .poster-wrap의 맨 뒤로 이동!
         //.poster-wrap의 li 순서가 변경되었으므로 top값 초기화
         //동시에 이동값(up) 초기화!
@@ -74,43 +73,40 @@ function flowL() {
 var flowPosterR; //인터벌 담을 변수
 
 $(document).ready(function(){
-    flowPosterR = setInterval(flowR, 30); //시간조절
+    flowPosterR = setInterval(flowR,5);
 
     $('.poster-wrap.right li').hover(function(){
-        clearInterval(flowPosterR); //호버시 멈춤
-    }, function(){ //호버아닐 때 정상작동
-        flowPosterR = setInterval(flowR, 30);
+        clearInterval(flowPosterR);
+    }, function(){
+        flowPosterR = setInterval(flowR, 5);
     });
 });
 
-var down = 0; //이동하는 top값을 담을 변수
+var down = 0;
 
-function flowR() {
+function flowR (){
+     
+    down++; //bottom 이동값을 1씩 증가
 
-    down++; //top 이동값을 1씩 증가!
+    var boxHeightR = $('.poster-wrap.right li').last().outerHeight();
 
-    var boxHeightR = $('.poster-wrap.right li').first().outerHeight();
+    if(down > boxHeightR){
+        //(밑으로 내려가서)사라진 마지막 li를 맨앞으로 이동시키기
+        //li 순서가 변경되었으므로 bottom값 초기화
+        //동시에 이동값인 down 초기화
 
-    // 이동한 픽셀수(down)가 li 하나의 높이보다 커졌을 때 -> 다음을 위한 준비!
-    if (down > boxHeightR) {
-        //(아래로 흘러가서)사라진 첫번째 li를 .poster-wrap의 맨 뒤로 이동!
-        //.poster-wrap의 li 순서가 변경되었으므로 top값 초기화
-        //동시에 이동값(down) 초기화!
-
-        $('.poster-wrap.right').prepend($('.poster-wrap.right li').first()).css({
+        $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
             bottom: 0
         });
 
         down = 0;
-
     } else {
-        //down의 값을 top 값으로 적용!
+        //down의 값을 bottom 값으로 적용하기
         $('.poster-wrap.right').css({
             bottom: -down
         });
     }
 }
-
 
 //VISION 슬라이드 효과
 $(document).ready(function () {
@@ -139,11 +135,11 @@ function slide() {
         firstSlide.removeClass('active');
     });
 }
-//글은 정상작동/background가 엉터리임
+//글은 정상작동하는데 background가 엉터리임
 
 
 //BOARD tabmenu 효과
-/* $(document).ready(function () {
+$(document).ready(function () {
 
     //클릭 안 한 상태에서 #news 내용 보이게 하기
     $('#news').show();
@@ -157,11 +153,11 @@ function slide() {
         //선택된 탭메뉴 디자인 변경하기
         $(this).parent().addClass('on').siblings().removeClass('on');
 
-        $('.content-box > .news-wrap').hide();
+        $('.content-box .news-wrap').hide();
         $(aHref).fadeIn(600);
     });
 });
 
 
 
- */
+

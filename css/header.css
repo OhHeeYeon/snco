@@ -12,53 +12,148 @@ header {
     z-index: 999;
 }
 
-header .inner {
-    position: relative; /* .menu-wrap 기준 */
+header .inbox {
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+
+    height: 100%;
+
+    /* outline: 2px solid lime; */
 }
 
 header h1 {
-    margin: 23px 50px 0 60px;
-    display: inline-block;
     float: left;
+    height: 100%;
 }
 
 header h1 a img {
     display: block;
+    margin-top: 25px;
+    height: 50px;
 }
 
+/* 덩어리 안에서 float 활용 */
 header .menu-wrap {
+    float: right;
+}
+
+header .menu-wrap .bg {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+
     position: absolute;
-    right: 130px;
-    top: 0;
+    /* header를 기준으로! */
+    left: 0;
+    top: 100px;
+
+    display: none;
 }
 
-header nav .gnb {}
-
-header nav .gnb li {
+header .menu-wrap nav {
     float: left;
-    line-height: 100px;
+
+    position: relative;
+    /* .lnb의 기준! */
 }
 
-header nav .gnb li~li {
+header nav .gnb>li {
+    float: left;
+    /* outline: 2px solid red; */
+
+    /* position: relative; */
+    /* .lnb의 기준222!!! */
+}
+
+header nav .gnb>li:hover {
+    box-shadow: 0 -2px #00baf2 inset;
+}
+
+header nav .gnb>li~li {
     margin-left: 50px;
 }
 
-header nav .gnb li a {
+header nav .gnb>li>a {
     color: #fff;
     display: block;
+    line-height: 100px;
+    font-size: 20px;
     transition: all 0.5s;
 }
 
-header nav .gnb li a:hover {
+header nav .gnb>li>a:hover {
     color: #00baf2;
-    border-bottom: 1px solid;
     transition: all 0.5s;
 }
 
-/* 언어는 메인 메뉴로 묶지 말 것! 수정 필요 */
-header .globe {
-    margin-right: 60px;
-    float: right;
+/* 서브메뉴 */
+header nav .gnb>li .lnb {
+    /* width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 100%; */
+
+    position: absolute;
+
+    left: 0;
+    top: 100px;
+
+    display: none;
+}
+
+header nav .gnb>li .lnb li a {
+    transition: all 0.3s;
+}
+
+header nav .gnb>li .lnb li a:hover {
+    color: #00baf2;
+    transition: all 0.3s;
+}
+
+/* 테스트!!! */
+/* header nav .gnb>li .lnb.on {
+    display: block;
+} */
+
+header nav .gnb>li .lnb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lnb li {
+    float: left;
+}
+
+.lnb li~li {
+    margin-left: 20px;
+}
+
+.lnb li a {
+    line-height: 80px;
+}
+
+/* .gnb li .lnb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ */
+
+.gnb li .lnb li {}
+
+.gnb li .lnb li a {
+    color: #3a5575;
+    font-weight: 600;
+}
+
+header .menu-wrap .globe {
+    /* margin-right: 60px;
+    float: right; */
+
+    float: left;
+    margin-left: 50px;
     line-height: 100px;
 }
 
@@ -69,30 +164,3 @@ header .globe a {
 header .globe a img {
     margin-top: 35px;
 }
-
-.gnb li .lnb {
-    background-color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    left: 0;
-    
-    display: none;
-}
-
-.gnb li .lnb::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.gnb li .lnb li {}
-
-.gnb li .lnb li a {
-    color: #3a5575;
-    font-weight: 600;
-}
-
-.gnb li .lnb li a:hover {
-    border-bottom: 2px solid #3a5575;
-    box-sizing: border-box;
-}
-
