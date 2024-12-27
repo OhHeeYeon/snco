@@ -102,6 +102,18 @@ header nav .gnb>li .lnb {
     display: none;
 }
 
+header nav .gnb>li#newsletter .lnb {
+    left: 333px;
+}
+
+header nav .gnb>li#board .lnb {
+    left: 503px;
+}
+
+header nav .gnb>li#auditions .lnb {
+    left: 633px;
+}
+
 header nav .gnb>li .lnb li a {
     transition: all 0.3s;
 }
@@ -148,7 +160,7 @@ header nav .gnb>li .lnb::after {
     font-weight: 600;
 }
 
-header .menu-wrap .globe {
+header .menu-wrap .lang {
     /* margin-right: 60px;
     float: right; */
 
@@ -157,10 +169,10 @@ header .menu-wrap .globe {
     line-height: 100px;
 }
 
-header .globe a {
+header .lang a {
     display: block;
 }
 
-header .globe a img {
+header .lang a img {
     margin-top: 35px;
 }

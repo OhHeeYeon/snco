@@ -10,10 +10,4 @@ $(document).ready(function(){
         $('.lnb').stop().fadeOut();
         $('.menu-wrap').find('.bg').stop().fadeOut();
     });
-
-    $('.bg').hover(function(){ //서브메뉴 배경을 호버했을 때
-        $('.menu-wrap').find('.bg').stop().fadeIn();
-    }, function(){
-        $('.menu-wrap').find('.bg').stop().fadeOut();
-    });
 });

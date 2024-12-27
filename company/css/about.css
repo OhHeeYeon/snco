@@ -75,12 +75,14 @@ section.about {
 
     position: absolute;
     bottom: 130px;
+
+    display: none; /* 제이쿼리 구현 위한 초기설정 */
 }
 
 .worldwide .img-box {
     position: absolute;
     right: 0;
-    bottom: 100px;
+    bottom: 50px;
 
     border-top-left-radius: 200px;
     overflow: hidden;
@@ -124,6 +126,8 @@ section.about {
     position: absolute;
     right: 0;
     bottom: 60px;
+
+    display: none; /* 제이쿼리 구현 위한 초기설정 */
 }
 
 .global {
@@ -142,6 +146,8 @@ section.about {
     left: 20%;
     bottom: 15%;
     width: 30%;
+
+    display: none; /* 제이쿼리 구현 위한 초기설정 */
 }
 
 .global .global-box1 .img-box {
@@ -193,6 +199,8 @@ section.about {
     position: absolute;
     right: 15%;
     top: 55%;
+
+    display: none; /* 제이쿼리 구현 위한 초기설정 */
 }
 
 .global-box3 {
@@ -213,4 +221,6 @@ section.about {
     position: absolute;
     top: 60%;
     transform: translateY(-50%);
+
+    display: none; /* 제이쿼리 구현 위한 초기설정 */
 }

@@ -21,26 +21,30 @@
 
 <body>
     <header>
-        <div class="clearfix">
+        <div class="inbox clearfix">
             <h1><a href="../index.html"><img src="img/news/snco_logo.png" alt="에스앤코 로고"></a></h1>
 
             <div class="menu-wrap">
+
+                <!-- 서브메뉴의 배경! -->
+                <div class="bg"></div>
+
                 <nav>
                     <ul class="gnb clearfix">
                         <li>
                             <a href="../company/about.html">COMPANY</a>
                             <ul class="lnb">
-                                <li><a href="#">회사소개</a></li>
-                                <li><a href="#">비전</a></li>
-                                <li><a href="#">연혁</a></li>
-                                <li><a href="#">문의</a></li>
+                                <li><a href="../company/about.html">회사소개</a></li>
+                                <li><a href="../company/vision.html">비전</a></li>
+                                <li><a href="../company/history.html">연혁</a></li>
+                                <li><a href="../company/contact.html">문의</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="../productions/productions.html">PRODUCTIONS</a>
                             <ul class="lnb">
-                                <li><a href="#">알라딘</a></li>
+                                <li><a href="../productions/aladdin/about.html">알라딘</a></li>
                                 <li><a href="#">하데스타운</a></li>
                                 <li><a href="#">디어 에반 핸슨</a></li>
                                 <li><a href="#">스쿨 오브 락</a></li>
@@ -48,35 +52,39 @@
                                 <li><a href="#">캣츠</li>
                                 <li><a href="#">라이온킹</a></li>
                                 <li><a href="#">위키드</a></li>
-                                <li><a href="#">매튜 본 백조의 호수</a></li>
-                                <li><a href="#">앤드류 로이드 웨버 콘서트</a></li>
                             </ul>
                         </li>
 
-                        <li>
+                        <li id="newsletter">
                             <a href="../newsletter/newsletter.html">NEWSLETTER</a>
+                            <ul class="lnb">
+                                <li><a href="../newsletter/newsletter.html">뉴스레터 구독하기</a></li>
+                            </ul>
                         </li>
 
-                        <li>
-                            <a href="../board/news.html">BOARD</a>
+                        <li id="board">
+                            <a href="news.html">BOARD</a>
                             <ul class="lnb">
-                                <li><a href="#">뉴스</a></li>
+                                <li><a href="news.html">뉴스</a></li>
                                 <li><a href="#">프로모션</a></li>
                                 <li><a href="#">이벤트</a></li>
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="#">AUDITIONS</a>
+                        <li id="auditions">
+                            <a href="../auditions/">AUDITIONS</a>
+                            <ul class="lnb">
+                                <li><a href="../auditions/">오디션 공고</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
-            </div>
 
-            <div class="globe">
-                <a href="#">
-                    <img src="img/news/globe-icon.png" alt="언어 전환">
-                </a>
+                <div class="lang">
+                    <a href="#">
+                        <img src="img/news/globe-icon.png" alt="언어 전환">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
