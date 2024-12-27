@@ -83,6 +83,7 @@ section.about {
     position: absolute;
     right: 0;
     bottom: 50px;
+    opacity: 0;
 
     border-top-left-radius: 200px;
     overflow: hidden;
@@ -110,9 +111,10 @@ section.about {
 
 .all-generation .img-box {
     position: absolute;
-    bottom: 0;
+    bottom: -50px; /* 제이쿼리 구현 위한 초기설정 */
+    opacity: 0;
     width: 50%;
-    height: 100%;
+    height: 90%;
 
     border-top-right-radius: 200px;
     overflow: hidden;
@@ -153,7 +155,9 @@ section.about {
 .global .global-box1 .img-box {
     position: absolute;
     right: 0;
-    bottom: 0;
+    /* 제이쿼리 초기설정을 위한 구현 */
+    bottom: -50px;
+    opacity: 0;
 
     border-top-left-radius: 200px;
     overflow: hidden;
@@ -179,6 +183,10 @@ section.about {
 
     position: absolute;
     left: 0;
+
+    /* 제이쿼리 구현을 위한 초기설정 */
+    bottom: -50px;
+    opacity: 0;
 }
 
 .global-box2 .img-box img {
@@ -203,14 +211,20 @@ section.about {
     display: none; /* 제이쿼리 구현 위한 초기설정 */
 }
 
+.producer {
+    height: 70%;
+}
+
 .global-box3 {
-    padding-top: 30px;
+    height: 80%;
     position: relative;
     /* .txt-box의 기준 */
 }
 
 .global-box3 .img-box {
-    float: right;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
 }
 
 .global-box3 .img-box img {
@@ -219,8 +233,12 @@ section.about {
 
 .global-box3 .txt-box {
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 
     display: none; /* 제이쿼리 구현 위한 초기설정 */
+}
+
+footer {
+    margin-top: 100px;
 }

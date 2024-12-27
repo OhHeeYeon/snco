@@ -176,10 +176,6 @@ article .container {
     /* 연표 줄의 기준 */
 }
 
-article .container .bg {
-    z-index: -1;
-}
-
 article .container .circle {
     position: absolute;
     left: 15%;

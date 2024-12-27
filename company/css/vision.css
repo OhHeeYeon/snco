@@ -15,6 +15,8 @@ section .sub-main {
 .vision-top h3 {
     text-align: center;
     margin-bottom: 70px;
+
+    opacity: 0;
 }
 
 .vision-top h3 .tit {
@@ -42,6 +44,8 @@ section .sub-main {
 .vision-top .vision-wrap .vision-box {
     width: 21.66666666667%;
     float: left;
+
+    opacity: 0;
 }
 
 .vision-top .vision-wrap .vision-box~.vision-box {
@@ -129,7 +133,7 @@ section .sub-main {
     width: 100%;
 }
 
-.vision-main .txt-box p {
+.vision-main .txt-box {
     width: 40%;
     line-height: 30px;
     background-color: #3a5575;
@@ -137,26 +141,29 @@ section .sub-main {
     padding: 40px 50px;
 }
 
-#people .txt-box p {
+#people .txt-box {
     position: absolute;
     right: 16%;
-    bottom: -2%;
+    bottom: -7%;
+
+    /* 제이쿼리 구현을 위한 초기설정 */
+    opacity: 0;
 }
 
-#long .txt-box p {
+#long .txt-box {
     position: absolute;
     left: 16%;
-    bottom: 5%;
+    bottom: 0;
 }
 
 #educational {
     margin-bottom: 200px;
 }
 
-#educational .txt-box p {
+#educational .txt-box {
     position: absolute;
     right: 16%;
-    bottom: -5%;
+    bottom: -10%;
 }
 
 #innovative {
@@ -168,7 +175,8 @@ section .sub-main {
     bottom: -6%;
 }
 
-#innovative .txt-box p {
+#innovative .txt-box {
     position: absolute;
     left: 16%;
+    top: 105px;
 }
