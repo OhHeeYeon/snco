@@ -66,15 +66,55 @@ $(window).scroll(function () {
     console.log('기준간격: ' + gap);
 
     //스크롤 할 때마다 gap 값에 따라 내용 등장
-    var visionSec = $('section').eq(0).offset().top - gap;
-    console.log('내용 등장 기준값: ' + visionSec);
+    var visionSec1 = $('section').eq(2).offset().top - gap;
+    console.log('내용 등장 기준값: ' + visionSec1);
 
-    if(scTop > visionSec) {
-        if(scTop > 1300) {
+    if(scTop > visionSec1) {
+        if(scTop > 1200) {
             $('#people .txt-box').animate({
                 bottom: '-2%',
                 opacity:1
             },800)
         }
+
+
     }
+
+    var visionSec2 = $('section').eq(3).offset().top - gap;
+    console.log('내용 등장 기준값: ' + visionSec2);
+
+    if(scTop > visionSec2) {
+        if(scTop > 1200) {
+            $('#long .txt-box').animate({
+                bottom: 0,
+                opacity: 1
+            },800)
+        }
+    }
+
+    var visionSec3 = $('section').eq(4).offset().top - gap;
+    console.log('내용 등장 기준값: ' + visionSec3);
+
+    if(scTop > visionSec3) {
+        if(scTop > 1200) {
+            $('#educational .txt-box').animate({
+                bottom: '-10%',
+                opacity:1
+            },800)
+        }
+    }
+
+    var visionSec4 = $('section').eq(5).offset().top - gap;
+    console.log('내용 등장 기준값: ' + visionSec4);
+
+    if(scTop > visionSec4) {
+        if(scTop > 1200) {
+            $('#innovative .txt-box').animate({
+                top: '90px',
+                opacity:1
+            },800)
+        }
+    }
+
+    
 });

@@ -153,7 +153,10 @@ section .sub-main {
 #long .txt-box {
     position: absolute;
     left: 16%;
-    bottom: 0;
+    bottom: -5%;
+    
+    /* 제이쿼리 구현을 위한 초기설정 */
+    opacity: 0;
 }
 
 #educational {
@@ -163,7 +166,10 @@ section .sub-main {
 #educational .txt-box {
     position: absolute;
     right: 16%;
-    bottom: -10%;
+    bottom: -15%;
+
+    /* 제이쿼리 구현을 위한 초기설정 */
+    opacity: 0;
 }
 
 #innovative {
@@ -178,5 +184,8 @@ section .sub-main {
 #innovative .txt-box {
     position: absolute;
     left: 16%;
-    top: 105px;
+    top: 110px;
+    
+    /* 제이쿼리 구현을 위한 초기설정 */
+    opacity: 0;
 }

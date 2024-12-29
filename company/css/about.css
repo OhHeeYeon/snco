@@ -61,6 +61,7 @@ section.about {
 
 .worldwide {
     background: url(../img/about/WORLDWIDE.png) no-repeat;
+    background-size: 100%;
 }
 
 .worldwide .about-box {
@@ -96,6 +97,7 @@ section.about {
 .all-generation {
     background: url(../img/about/ALL_GENERATION.png) no-repeat;
     background-position: right top;
+    background-size: 100%;
     width: 100%;
     height: 100%;
 
@@ -138,6 +140,7 @@ section.about {
 
 .global .global-box1 {
     background: url(../img/about/GLOBAL_NETWORK.png) no-repeat;
+    background-size: 100%;
     height: 100%;
     position: relative;
     /* 텍스트 박스와 이미지의 기준 */
@@ -225,13 +228,15 @@ section.about {
     position: absolute;
     right: 0;
     bottom: -50px;
+
+    opacity: 0; /* 제이쿼리 구현 위한 초기설정 */
 }
 
 .global-box3 .img-box img {
     width: 100%;
 }
 
-.global-box3 .txt-box {
+.global-box3 .about-txt {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
