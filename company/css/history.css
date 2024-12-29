@@ -152,6 +152,9 @@ article.history {
 
 .history h3 {
     text-align: center;
+
+    /* 제이쿼리 효과를 위한 초기설정 */
+    opacity: 0;
 }
 
 .history h3 .tit {

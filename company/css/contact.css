@@ -1,7 +1,85 @@
 @charset "utf-8";
 
-/*CONTACT***************************************************************/section .sub-main {
+/*CONTACT***************************************************************/
+section .sub-main {
     background: url(../img/about/company-header.jpg) no-repeat center top/cover;
-    margin-bottom: 120px;
 }
 
+article.tit {
+    padding: 120px 0 130px;
+    text-align: center;
+}
+
+.tit h3 {
+    display: inline-block;
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: bold;
+    background: linear-gradient(160deg, #00baf2, #3a5575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(160deg, #00baf2, #3a5575);
+    border-image-slice: 1;
+
+    /* 제이쿼리 효과를 위한 초기설정 */
+    /* opacity: 0; */
+}
+
+.contact-box {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+.contact-box .contact {
+    list-style-position: inside;
+}
+
+.contact-box .contact .location::before {
+    content: url(../img/contact/location.png);
+}
+
+.contact-box .contact .tel::before {
+    content: url(../img/contact/tel.png);
+}
+
+.contact-box .contact .fax::before {
+    content: url(../img/contact/fax.png);
+}
+
+.contact-box .contact .email::before {
+    content: url(../img/contact/email.png);
+}
+
+.contact-box .contact h4::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact-box .contact h4 {
+    padding-left: 30px;
+    color: #3a5575;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 20px;
+
+    position: relative;
+    /* 아이콘의 기준 */
+}
+
+.contact-box .contact p {
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+footer {
+    margin-top: 200px;
+}

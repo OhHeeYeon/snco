@@ -9,10 +9,20 @@ body {
 
 section .sub-main {
     background: url(../img/about/company-header.jpg) no-repeat center top/cover;
-    margin-bottom: 120px;
+}
+
+.vision-top {
+    background: url(../img/vision/bg-circle_s.png) no-repeat;
+    background-position: 100% 100%;
+}
+
+.vision-top article {
+    background: url(../img/vision/bg-circle.png) no-repeat;
+    background-position: -5% -20%;
 }
 
 .vision-top h3 {
+    padding-top: 120px;
     text-align: center;
     margin-bottom: 70px;
 
@@ -37,8 +47,10 @@ section .sub-main {
 }
 
 .vision-top .vision-wrap {
-    margin: 0 auto 150px;
+    margin: 0 auto;
     max-width: 1200px;
+
+    padding-bottom: 150px;
 }
 
 .vision-top .vision-wrap .vision-box {
