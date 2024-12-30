@@ -86,7 +86,7 @@ $(window).scroll(function () {
     if(scTop > visionSec2) {
         if(scTop > 1200) {
             $('#long .txt-box').animate({
-                bottom: 0,
+                bottom: '5%',
                 opacity: 1
             },800)
         }
@@ -96,9 +96,9 @@ $(window).scroll(function () {
     console.log('내용 등장 기준값: ' + visionSec3);
 
     if(scTop > visionSec3) {
-        if(scTop > 1200) {
+        if(scTop > 1000) {
             $('#educational .txt-box').animate({
-                bottom: '-10%',
+                bottom: '-5%',
                 opacity:1
             },800)
         }
