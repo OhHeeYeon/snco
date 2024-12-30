@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
 
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="scroll-up-bar.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/header.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="topbar">
         <div class="inbox clearfix">
             <h1><a href="index.html"><img src="img/snco_logo.png" alt="에스앤코 로고"></a></h1>
 
@@ -164,56 +165,59 @@
                     <a href="productions/productions.html" class="more-btn">자세히 보기</a>
                 </div>
 
-                <ul class="poster-wrap right">
-                    <li class="poster-box">
-                        <a href="productions/aladdin/about.html">
-                            <img src="img/poster-aladdin.jpg" alt="알라딘 바로가기">
-                        </a>
-                    </li>
+                <div class="poster-content">
+                    <ul class="poster-wrap left">
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-cats.jpg" alt="캣츠 바로가기">
+                            </a>
+                        </li>
 
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-hadestown.jpg" alt="하데스타운 바로가기">
-                        </a>
-                    </li>
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-the_phantom_of_the_opera.jpg" alt="오페라의 유령 바로가기">
+                            </a>
+                        </li>
 
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-dear_evan_hansen.jpg" alt="디어 에반 핸슨 바로가기">
-                        </a>
-                    </li>
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-lionking.jpg" alt="라이온킹 바로가기">
+                            </a>
+                        </li>
 
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-school_of_rock.jpg" alt="스쿨오브락 바로가기">
-                        </a>
-                    </li>
-                </ul>
-                <ul class="poster-wrap left">
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-cats.jpg" alt="캣츠 바로가기">
-                        </a>
-                    </li>
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-wicked.jpg" alt="위키드 바로가기">
+                            </a>
+                        </li>
+                    </ul>
 
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-the_phantom_of_the_opera.jpg" alt="오페라의 유령 바로가기">
-                        </a>
-                    </li>
+                    <ul class="poster-wrap right">
+                        <li class="poster-box">
+                            <a href="productions/aladdin/about.html">
+                                <img src="img/poster-aladdin.jpg" alt="알라딘 바로가기">
+                            </a>
+                        </li>
 
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-lionking.jpg" alt="라이온킹 바로가기">
-                        </a>
-                    </li>
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-hadestown.jpg" alt="하데스타운 바로가기">
+                            </a>
+                        </li>
 
-                    <li class="poster-box">
-                        <a href="#">
-                            <img src="img/poster-wicked.jpg" alt="위키드 바로가기">
-                        </a>
-                    </li>
-                </ul>
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-dear_evan_hansen.jpg" alt="디어 에반 핸슨 바로가기">
+                            </a>
+                        </li>
+
+                        <li class="poster-box">
+                            <a href="#">
+                                <img src="img/poster-school_of_rock.jpg" alt="스쿨오브락 바로가기">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </article>
 

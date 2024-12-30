@@ -12,6 +12,15 @@ header {
     z-index: 999;
 }
 
+header.on { /* 제이쿼리 구현을 위한 초기설정 */
+    background-color: #3a5575;
+    border: none;
+}
+
+.nav-up { /* 제이쿼리 구현을 위한 초기설정 */
+    top: -100px; /* 줄여질 헤더 높이 */
+}
+
 header .inbox {
     width: 90%;
     max-width: 1720px;

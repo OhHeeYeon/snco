@@ -28,16 +28,17 @@ function videoSlide() {
     });
 }
 
+
 //PRODUCTIONS 왼쪽 wrap 플로우 효과
 var flowPosterL; //인터벌 담을 변수
 
 $(document).ready(function(){
-    flowPosterL = setInterval(flowL,5); //시간조절
+    flowPosterL = setInterval(flowL,40); //시간조절
 
     $('.poster-wrap.left li').hover(function(){
         clearInterval(flowPosterL); //호버시 멈춤
     }, function(){ //호버아닐 때 정상작동
-        flowPosterL = setInterval(flowL, 5);
+        flowPosterL = setInterval(flowL, 40);
     });
 });
 
@@ -47,10 +48,10 @@ function flowL() {
 
     up++; //top 이동값을 1씩 증가!
 
-    var boxHeightL = $('.poster-wrap.left li').first().outerHeight();
+    var boxHeightL = $('.poster-wrap.left li').first().outerHeight(true);//margin값 포함(true)
 
     // 이동한 픽셀수(up)가 li 하나의 너비보다 커졌을 때 -> 다음을 위한 준비!
-    if (up > (boxHeightL/* +'margin-bottom'+'30px' */)) {
+    if (up > boxHeightL) {
         //(위로 흘러가서)사라진 첫번째 li를 .poster-wrap의 맨 뒤로 이동!
         //.poster-wrap의 li 순서가 변경되었으므로 top값 초기화
         //동시에 이동값(up) 초기화!
@@ -69,43 +70,81 @@ function flowL() {
     }
 }
 
+
 //PRODUCTIONS 오른쪽 wrap 플로우 효과
+
 var flowPosterR; //인터벌 담을 변수
+var boxHeightR = 0; //포스터 박스의 높이를 담을 변수!
+var down; 
 
 $(document).ready(function(){
-    flowPosterR = setInterval(flowR,5);
+
+    //초기설정 - 맨 마지막 포스터를 맨 앞으로 이동, top값 변경 
+
+    boxHeightR = $('.poster-wrap.right li').last().outerHeight(); //462
+    console.log('문서가 로딩되었을 때 박스값: ' + boxHeightR);
+
+    $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
+        top: -boxHeightR //맨 뒤에서 끌어온 포스터 높이만큼 top값을 이동시켜(-462) 두 번째 포스터를 첫번째로 보이게 설정
+    });
+
+    down = boxHeightR;
+
+    //맨 뒤 포스터를 맨 앞으로 준비시킨 다음 flow 실행! (왼쪽 poster는 flow 실행 후 준비시키기)
+    flowPosterR = setInterval(flowR, 40);
 
     $('.poster-wrap.right li').hover(function(){
         clearInterval(flowPosterR);
     }, function(){
-        flowPosterR = setInterval(flowR, 5);
+        flowPosterR = setInterval(flowR, 40);
     });
 });
 
-var down = 0;
+//var down = 0;
 
 function flowR (){
-     
-    down++; //bottom 이동값을 1씩 증가
 
-    var boxHeightR = $('.poster-wrap.right li').last().outerHeight();
+    //down값을 계속 감소시켜 0에 근접하게 = 아래로 이동
+    down--;
+    console.log(down);
 
-    if(down > boxHeightR){
+    if(-down >= 0){
+
+        //console.log('테스트출력');
+        //맨 앞으로 이동시켰던 포스터가 다 지나가면(top 값이 0이 되면) 다시 포스터 높이값만큼 top값을 변경하여 두번째 포스터부터 보이도록 하기
+
+        $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
+            top: -boxHeightR
+        });
+
+        down = boxHeightR;
+
+    } else {
+        $('.poster-wrap.right').css({
+            top: -down
+        });
+    }
+
+    //var boxHeightR = $('.poster-wrap.right li').last().outerHeight(true);
+
+    /* if(down < 0){
         //(밑으로 내려가서)사라진 마지막 li를 맨앞으로 이동시키기
         //li 순서가 변경되었으므로 bottom값 초기화
         //동시에 이동값인 down 초기화
 
         $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
-            bottom: 0
+            //bottom: 0
+            top: -boxHeightR
         });
 
-        down = 0;
+        down = -boxHeightR;
+
     } else {
         //down의 값을 bottom 값으로 적용하기
         $('.poster-wrap.right').css({
-            bottom: -down
+            top: -down
         });
-    }
+    } */
 }
 
 //VISION 슬라이드 효과

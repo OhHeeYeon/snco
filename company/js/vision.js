@@ -62,7 +62,7 @@ $(window).scroll(function () {
     var windowH = $(this).height();
     console.log('브라우저 화면 높이값: ' + windowH);
 
-    var gap = Math.ceil(windowH * 0.9);
+    var gap = Math.ceil(windowH * 0.4);
     console.log('기준간격: ' + gap);
 
     //스크롤 할 때마다 gap 값에 따라 내용 등장
@@ -84,7 +84,7 @@ $(window).scroll(function () {
     console.log('내용 등장 기준값: ' + visionSec2);
 
     if(scTop > visionSec2) {
-        if(scTop > 1200) {
+        if(scTop > 1000) {
             $('#long .txt-box').animate({
                 bottom: '5%',
                 opacity: 1
@@ -108,7 +108,7 @@ $(window).scroll(function () {
     console.log('내용 등장 기준값: ' + visionSec4);
 
     if(scTop > visionSec4) {
-        if(scTop > 1200) {
+        if(scTop > 1000) {
             $('#innovative .txt-box').animate({
                 top: '90px',
                 opacity:1
