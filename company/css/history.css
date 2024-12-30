@@ -231,7 +231,11 @@ ul .box2024 {}
 
 ul .box2024 .img-box {}
 
-ul .box2024 .img-box img {}
+ul .box2024 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2024 .txt-box {}
 
@@ -247,7 +251,11 @@ ul .box2023 {}
 
 ul .box2023 .img-box {}
 
-ul .box2023 .img-box img {}
+ul .box2023 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2023 .txt-box {}
 
@@ -263,7 +271,11 @@ ul .box2022 {}
 
 ul .box2022 .img-box {}
 
-ul .box2022 .img-box img {}
+ul .box2022 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2022 .txt-box {}
 
@@ -279,7 +291,11 @@ ul .box2021 {}
 
 ul .box2021 .img-box {}
 
-ul .box2021 .img-box img {}
+ul .box2021 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2021 .txt-box {}
 
@@ -295,7 +311,11 @@ ul .box2020 {}
 
 ul .box2020 .img-box {}
 
-ul .box2020 .img-box img {}
+ul .box2020 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2020 .txt-box {}
 
@@ -311,7 +331,11 @@ ul .box2019 {}
 
 ul .box2019 .img-box {}
 
-ul .box2019 .img-box img {}
+ul .box2019 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2019 .txt-box {}
 
@@ -327,7 +351,11 @@ ul .box2018 {}
 
 ul .box2018 .img-box {}
 
-ul .box2018 .img-box img {}
+ul .box2018 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2018 .txt-box {}
 
@@ -343,7 +371,11 @@ ul .box2017 {}
 
 ul .box2017 .img-box {}
 
-ul .box2017 .img-box img {}
+ul .box2017 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2017 .txt-box {}
 
@@ -359,7 +391,11 @@ ul .box2016 {}
 
 ul .box2016 .img-box {}
 
-ul .box2016 .img-box img {}
+ul .box2016 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2016 .txt-box {}
 
@@ -375,7 +411,11 @@ ul .box2013 {}
 
 ul .box2013 .img-box {}
 
-ul .box2013 .img-box img {}
+ul .box2013 .img-box img {
+    /* 제이쿼리 구현을 위한 초기설정정 */
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 ul .box2013 .txt-box {}
 

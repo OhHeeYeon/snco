@@ -19,6 +19,8 @@ section .sub-main {
 
 .newsletter-main .inner {
     overflow: hidden;
+
+    position: relative; /* 그라디언트의 기준 */
 }
 
 .newsletter-main .logo_slide {
@@ -28,7 +30,20 @@ section .sub-main {
     position: relative;
     left: 0;
     /* 포지션이 있어야 left값을 움직일 수 있다!! */
-    /* 그라디언트의 기준 */
+}
+
+.newsletter-main .left {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    z-index: 1;
+}
+
+.newsletter-main .right {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: 1;
 }
 
 .newsletter-main .logo_slide .logo {

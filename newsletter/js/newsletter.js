@@ -4,7 +4,7 @@ var autoCall;
 
 $(document).ready(function () {
 
-    autoCall = setInterval(flow, 10); 
+    autoCall = setInterval(flow, 20); 
     //흘러가는 속도 조절 = 자동실행 시간으로 조절!
 
 });
@@ -14,7 +14,7 @@ var moveNum = 0; //이동하는 left값을 담을 변수!
 function flow() {
     moveNum++; //left 이동값을 1씩 증가!
 
-    var boxWidth = $('.logo_slide li').first().outerWidth();
+    var boxWidth = $('.logo_slide li').first().outerWidth(true);
 
     // if else문
     // 이동한 픽셀수(moveNum)가 li 하나의 너비보다 커졌을 때 -> 다음을 위한 준비!
