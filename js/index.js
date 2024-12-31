@@ -80,7 +80,7 @@ $(document).ready(function(){
 
     //초기설정 - 맨 마지막 포스터를 맨 앞으로 이동, top값 변경 
 
-    boxHeightR = $('.poster-wrap.right li').last().outerHeight(); //462
+    boxHeightR = $('.poster-wrap.right li').last().outerHeight(true); 
     console.log('문서가 로딩되었을 때 박스값: ' + boxHeightR);
 
     $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
@@ -111,6 +111,8 @@ function flowR (){
 
         //console.log('테스트출력');
         //맨 앞으로 이동시켰던 포스터가 다 지나가면(top 값이 0이 되면) 다시 포스터 높이값만큼 top값을 변경하여 두번째 포스터부터 보이도록 하기
+
+        boxHeightR = $('.poster-wrap.right li').last().outerHeight(true); 
 
         $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
             top: -boxHeightR

@@ -3,7 +3,7 @@
 .container .news-wrap .news-box {
     width: 32%;
     float: left;
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
 }
 
 .container .news-wrap .news-box~.news-box {
