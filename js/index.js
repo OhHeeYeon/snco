@@ -5,7 +5,6 @@ $(document).ready(function () {
 
     var mainSlide; //인터벌용 변수
     mainSlide = setInterval(videoSlide, 10000);
-
 });
 
 // fadeSlide 함수 만들기 
@@ -125,26 +124,6 @@ function flowR (){
         });
     }
 
-    //var boxHeightR = $('.poster-wrap.right li').last().outerHeight(true);
-
-    /* if(down < 0){
-        //(밑으로 내려가서)사라진 마지막 li를 맨앞으로 이동시키기
-        //li 순서가 변경되었으므로 bottom값 초기화
-        //동시에 이동값인 down 초기화
-
-        $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
-            //bottom: 0
-            top: -boxHeightR
-        });
-
-        down = -boxHeightR;
-
-    } else {
-        //down의 값을 bottom 값으로 적용하기
-        $('.poster-wrap.right').css({
-            top: -down
-        });
-    } */
 }
 
 //VISION 슬라이드 효과
@@ -163,7 +142,7 @@ function slide() {
     //2번(다음) 슬라이드
     var nextSlide = firstSlide.next();
 
-    nextSlide.hide().addClass('active').fadeIn(400, function () {
+    nextSlide.hide().addClass('active').fadeIn(700, function () {
         //다음을 위한 준비
         //1번 슬라이드를 맨뒤로 이동
 
@@ -174,8 +153,6 @@ function slide() {
         firstSlide.removeClass('active');
     });
 }
-//글은 정상작동하는데 background가 엉터리임
-
 
 //BOARD tabmenu 효과
 $(document).ready(function () {

@@ -216,19 +216,19 @@ section .now-showing video {
     background-position: center;
 }
 
-.vision .slide:first-child {
+.vision .slide#people {
     background-image: url(../img/vision-people.jpg);
 }
 
-.vision .slide:nth-child(2) {
+.vision .slide#long {
     background-image: url(../img/vision-long.jpg);
 }
 
-.vision .slide:nth-child(3) {
+.vision .slide#educational {
     background-image: url(../img/vision-educational.jpg);
 }
 
-.vision .slide:nth-child(4) {
+.vision .slide#innovative {
     background-image: url(../img/vision-innovative.jpeg);
 }
 

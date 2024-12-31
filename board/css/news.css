@@ -42,7 +42,7 @@
 }
 
 .news-box a .txt-box {
-    padding: 30px;
+    padding: 30px 0;
     border-bottom: 1px solid #3a5575;
     margin-bottom: 30px;
 }
@@ -65,6 +65,7 @@
 .news-box a .txt-box p .title {
     color: #333;
     margin: 20px 0;
+    height: 36px;
 }
 
 .news-box a .txt-box p::after {

@@ -14,14 +14,17 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
 
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="../../js/scroll-up-bar.min.js"></script>
     <script src="../../js/header.js"></script>
     <script src="js/multimedia.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="topbar">
         <div class="inbox clearfix">
             <h1><a href="../../index.html"><img src="../img/snco_logo.png" alt="에스앤코 로고"></a></h1>
 
@@ -64,9 +67,9 @@
                         </li>
 
                         <li id="board">
-                            <a href="../board/news.html">BOARD</a>
+                            <a href="../../board/news.html">BOARD</a>
                             <ul class="lnb">
-                                <li><a href="../board/news.html">뉴스</a></li>
+                                <li><a href="../../board/news.html">뉴스</a></li>
                                 <li><a href="#">프로모션</a></li>
                                 <li><a href="#">이벤트</a></li>
                             </ul>
@@ -117,147 +120,95 @@
                             PHOTO
                         </a>
                     </li>
-                    <li><a href="#video">VIDEO</a></li>
+                    <li>
+                        <a href="#video">
+                            <img src="img/multimedia/video.svg" alt="비디오 아이콘">
+                        </a>
+                        <a href="#video">VIDEO</a>
+                    </li>
                 </ul>
             </div>
 
-            <!-- 내용이 보이는 덩어리 -->
             <div class="content-box">
-                <div id="photo">
-                    <div class="gallery">
-                        <!-- 메인 슬라이드 -->
-                        <div class="list">
-                            <div class="inner">
-                                <ul class="swiper-wrapper slide_list">
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/aladdin.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/aladdin2.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/ensemble.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/aladdin_jasmin.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/genie1.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/genie2.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <img src="img/multimedia/genie3.jpg" alt="알라딘 공연사진">
-                                    </li>
-                                </ul>
-                                <span class="btn btn_prev">이전</span>
-                                <span class="btn btn_next">다음</span>
-                            </div>
-                        </div>
+                <div class="content" id="photo">
+                    <ul class="bxslider">
+                        <li><img src="img/multimedia/aladdin.jpg" /></li>
+                        <li><img src="img/multimedia/aladdin2.jpg" /></li>
+                        <li><img src="img/multimedia/aladdin3.jpg" /></li>
+                        <li><img src="img/multimedia/aladdin_jasmin.jpg" /></li>
+                        <li><img src="img/multimedia/ensemble.jpg" /></li>
+                        <li><img src="img/multimedia/genie1.jpg" /></li>
+                        <li><img src="img/multimedia/genie2.jpg" /></li>
+                        <li><img src="img/multimedia/genie3.jpg" /></li>
+                        <li><img src="img/multimedia/genie4.jpg" /></li>
+                    </ul>
 
-                        <!-- 갤러리 썸네일 -->
-                        <div class="thumbs">
-                            <ul class="swiper-wrapper slide_list">
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/aladdin.jpg" alt="알라딘 공연사진">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/aladdin2.jpg" alt="알라딘 공연사진">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/ensemble.jpg" alt="알라딘 공연사진">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/aladdin_jasmin.jpg" alt="알라딘 공연사진">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/genie1.jpg" alt="알라딘 공연사진">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/genie2.jpg" alt="알라딘 공연사진">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="img/multimedia/genie3.jpg" alt="알라딘 공연사진">
-                                </li>
-                            </ul>
-                        </div>
+                    <div id="bx-pager">
+                        <a data-slide-index="0" href=""><img src="img/multimedia/aladdin_thumb.jpg" /></a>
+                        <a data-slide-index="1" href=""><img src="img/multimedia/aladdin2_thumb.jpg" /></a>
+                        <a data-slide-index="2" href=""><img src="img/multimedia/aladdin3.thumb.jpg" /></a>
+                        <a data-slide-index="3" href=""><img src="img/multimedia/aladdin_jasmin_thumb.jpg" /></a>
+                        <a data-slide-index="4" href=""><img src="img/multimedia/ensemble_thumb.jpg" /></a>
+                        <a data-slide-index="5" href=""><img src="img/multimedia/genie1_thumb.jpg" /></a>
+                        <a data-slide-index="6" href=""><img src="img/multimedia/genie2_thumb.jpg" /></a>
+                        <a data-slide-index="7" href=""><img src="img/multimedia/genie3_thumb.jpg" /></a>
+                        <a data-slide-index="8" href=""><img src="img/multimedia/genie4_thumb.jpg" /></a>
                     </div>
                 </div>
 
-                <div id="video">
-                    <div class="gallery">
-                        <!-- 메인 슬라이드 -->
-                        <div class="list">
-                            <div class="inner">
-                                <ul class="swiper-wrapper slide_list">
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘 2024] Opening Night 영상 공개.mp4">
-                                        </video>
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘 2024] 크리에이터 인터뷰 영상 공개.mp4">
-                                        </video>
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘] 2024 알라딘 한국 초연의 치열했던 오디션 현장 공개!.mp4">
-                                        </video>
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘 2024] 'Arabian Nights' 연습 영상 - 김준수, 정원영, 이성경 외.mp4">
-                                        </video>
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘 2024] 'Friend Like Me' 연습 영상 - 박강현, 정원영 외.mp4">
-                                        </video>
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘 2024] 기술 수퍼바이저 패트릭 에비스톤 인터뷰 영상 공개.mp4">
-                                        </video>
-                                    </li>
-                                    <li class="swiper-slide">
-                                        <video controls>
-                                            <source src="video/[뮤지컬 알라딘 2024] 음향 디자이너 캔 트라비스 인터뷰 영상 공개.mp4">
-                                        </video>
-                                    </li>
-                                </ul>
-                                <span class="btn btn_prev">이전</span>
-                                <span class="btn btn_next">다음</span>
-                            </div>
-                        </div>
+                <div class="content" id="video">
+                    <ul class="bxslider inner">
+                        <li>
+                            <video controls>
+                                <source src="video/staff_interview1.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/staff_interview2.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/staff_interview3.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/practice1.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/practice2.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/audition.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/aladdin_opening_night.mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video controls>
+                                <source src="video/spot1.mp4">
+                            </video>
+                        </li>
+                    </ul>
 
-                        <!-- 갤러리 썸네일 -->
-                        <div class="thumbs">
-                            <ul class="swiper-wrapper slide_list">
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="" alt="">
-                                </li>
-                            </ul>
-                        </div>
+                    <div id="bx-pager">
+                        <a data-slide-index="0" href=""><img src="img/multimedia/staff_thumb1.PNG" /></a>
+                        <a data-slide-index="1" href=""><img src="img/multimedia/staff_thumb2.PNG" /></a>
+                        <a data-slide-index="2" href=""><img src="img/multimedia/staff_thumb3.PNG" /></a>
+                        <a data-slide-index="3" href=""><img src="img/multimedia/practice1_thumb.PNG" /></a>
+                        <a data-slide-index="4" href=""><img src="img/multimedia/practice2_thumb.PNG" /></a>
+                        <a data-slide-index="5" href=""><img src="img/multimedia/audition_thumb.PNG" /></a>
+                        <a data-slide-index="6" href=""><img src="img/multimedia/opening_thumb.PNG" /></a>
+                        <a data-slide-index="7" href=""><img src="img/multimedia/spot_thumb.PNG" /></a>
                     </div>
                 </div>
             </div>
@@ -282,15 +233,16 @@
 
             <div class="right">
                 <ul class="sns">
-                    <li><a href="https://www.instagram.com/snco_korea/" target="_blank"><img src="img/multimedia/footer_insta.png"
-                                alt="인스타그램 바로가기"></a></li>
+                    <li><a href="https://www.instagram.com/snco_korea/" target="_blank"><img
+                                src="img/multimedia/footer_insta.png" alt="인스타그램 바로가기"></a></li>
                     <li><a href="https://www.youtube.com/@musicofthenightkr/videos" target="_blank"><img
                                 src="img/multimedia/footer_youtube.png" alt="유튜브 바로가기"></a></li>
-                    <li><a href="tel:02-3496-8861" target="_blank"><img src="img/multimedia/footer_tel.png" alt="전화 연결하기"></a></li>
+                    <li><a href="tel:02-3496-8861" target="_blank"><img src="img/multimedia/footer_tel.png"
+                                alt="전화 연결하기"></a></li>
                     <li><a href="mailto:info@sncokorea.com" target="_blank"><img src="img/multimedia/footer_mail.png"
                                 alt="메일 전송하기"></a></li>
-                    <li><a href="https://pf.kakao.com/_QiIxfG" target="_blank"><img src="img/multimedia/footer_kakaotalk.png"
-                                alt="카카오톡 플러스친구"></a></li>
+                    <li><a href="https://pf.kakao.com/_QiIxfG" target="_blank"><img
+                                src="img/multimedia/footer_kakaotalk.png" alt="카카오톡 플러스친구"></a></li>
                 </ul>
             </div>
         </div>

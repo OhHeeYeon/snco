@@ -8,6 +8,7 @@ section {
 
 .multimedia {
     background: url(../img/tickets/bg-gradient.png) no-repeat top/100%;
+    padding-bottom: 200px;
 }
 
 .multimedia .tabmenu {
@@ -38,34 +39,28 @@ section {
     margin-left: 300px;
 }
 
-.tabmenu ul li a {}
-
-.gallery {
-    overflow: hidden;
-    position: relative;
-}
-
-.gallery .list {}
-
-.gallery .list .inner {
-    position: relative;
-}
-
-.gallery .list .swiper-wrapper {}
-
-.gallery .list .swiper-wrapper .swiper-slide {}
-
-.gallery .list .swiper-wrapper .swiper-slide img {
+.tabmenu ul li a {
     display: block;
 }
 
-.gallery .list .swiper-wrapper .swiper-slide video {
-    width: 100%;
-    display: block;
+.content-box .content {
+    display: none;
+    /* 탭메뉴 구현위한 초기설정 */
 }
 
-.gallery .list .btn {}
+#bx-pager {
+    text-align: center;
+    margin-top: -30px;
+}
 
-.gallery .list .btn_prev {}
+#bx-pager a {
+    margin: 0 3px;
+}
 
-.gallery .list .btn_next {}
+#bx-pager a img {
+    border: solid #3a5575 1px
+}
+
+#bx-pager a.active img {
+    border: solid #00baf2 1px;
+}
