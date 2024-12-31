@@ -15,7 +15,7 @@ $(document).ready(function(){
         //클릭하면 hide()를 종료하면서 나머지 내용 한줄씩!!
         $('.news-box:hidden').slice(0,3).slideDown();
 
-        //남은 박스 개수 확인하기기
+        //남은 박스 개수 확인하기
         var hBox = $('.news-box:hidden').length;
         console.log('남은 box: ' + hBox);
 
