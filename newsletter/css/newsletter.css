@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 뉴스레터 */
-span {
+section span {
     display: block;
 }
 

@@ -13,7 +13,7 @@ section .sub-main {
 }
 
 /* 알라딘 메뉴 공통 css */
-span {
+section span {
     display: block;
 }
 
