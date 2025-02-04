@@ -58,9 +58,21 @@ section {
 }
 
 #bx-pager a img {
-    border: solid #3a5575 1px
+    border: solid #3a5575 1px;
 }
 
 #bx-pager a.active img {
     border: solid #00baf2 1px;
+}
+
+#video ul {
+    display: inline-block;
+}
+
+#video ul li {
+}
+
+#video ul li video {
+    width: 100%;
+    max-width: 600px;
 }

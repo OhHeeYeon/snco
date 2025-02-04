@@ -3,6 +3,11 @@
 /* 알라딘 공연정보 */
 
 /* 공통 디자인 *********************************************************/
+body {
+    /* 애니메이션 가로 스크롤 해결 */
+    overflow-x: hidden;
+}
+
 .tit {
     font-size: 42px;
     font-size: 2.625rem;
@@ -177,7 +182,6 @@ section {
 }
 
 .enjoy .about2 .txt-box {
-    /* float: left; */
     text-align: center;
     font-size: 1.25rem;
     position: absolute;
