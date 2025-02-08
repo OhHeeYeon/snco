@@ -21,9 +21,6 @@ article.tit {
     border-bottom: 3px solid;
     border-image: linear-gradient(160deg, #00baf2, #3a5575);
     border-image-slice: 1;
-
-    /* 제이쿼리 효과를 위한 초기설정 */
-    /* opacity: 0; */
 }
 
 .contact-box {

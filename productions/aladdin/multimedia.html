@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/colorbox.css">
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="../../js/scroll-up-bar.min.js"></script>
     <script src="../../js/header.js"></script>
     <script src="js/multimedia.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 </head>
 
 <body>
@@ -76,9 +78,9 @@
                         </li>
 
                         <li id="auditions">
-                            <a href="../../auditions/">AUDITIONS</a>
+                            <a href="../../auditions/auditions.html">AUDITIONS</a>
                             <ul class="lnb">
-                                <li><a href="../../auditions/">오디션 공고</a></li>
+                                <li><a href="../../auditions/auditions.html">오디션 공고</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -131,6 +133,7 @@
 
             <div class="content-box">
                 <div class="content" id="photo">
+                    <!-- 메인 -->
                     <ul class="bxslider">
                         <li><img src="img/multimedia/aladdin.jpg" /></li>
                         <li><img src="img/multimedia/aladdin2.jpg" /></li>
@@ -143,6 +146,7 @@
                         <li><img src="img/multimedia/genie4.jpg" /></li>
                     </ul>
 
+                    <!-- 썸네일 -->
                     <div id="bx-pager">
                         <a data-slide-index="0" href=""><img src="img/multimedia/aladdin_thumb.jpg" /></a>
                         <a data-slide-index="1" href=""><img src="img/multimedia/aladdin2_thumb.jpg" /></a>
@@ -157,56 +161,73 @@
                 </div>
 
                 <div class="content" id="video">
-                    <ul>
+                    <!-- 썸네일 -->
+                    <ul class="inner clearfix">
                         <li>
-                            <img src="img/multimedia/" alt="">
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/G9k9R4buaVE">
+                                <img src="img/multimedia/thumb-sound.png" alt="YouTube 영상 썸네일">
+
+                                <p>음향 디자이너 캔 트라비스 인터뷰 영상</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/jUxJly27fyE">
+                                <img src="img/multimedia/thumb-creative.png" alt="YouTube 영상 썸네일">
+
+                                <p>해외 크리에이터 인터뷰 영상 공개</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/GQvVDifuaf8">
+                                <img src="img/multimedia/thumb-audition.png" alt="YouTube 영상 썸네일">
+
+                                <p>한국 초연! 치열했던 오디션 현장 공개</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/bKl8LmSecw0">
+                                <img src="img/multimedia/thumb-technology.png" alt="YouTube 영상 썸네일">
+
+                                <p>기술 수퍼바이저 패트릭 에비스톤 인터뷰 영상 공개</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/vcJxXe_Vxvk">
+                                <img src="img/multimedia/thumb-spot.png" alt="YouTube 영상 썸네일">
+
+                                <p>알라딘 30초 스팟 영상 공개</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/iaaNkBgtGWY">
+                                <img src="img/multimedia/thumb-practice1.png" alt="YouTube 영상 썸네일">
+
+                                <p>'Friend Like Me' 연습 영상 - 박강현, 정원영 외</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/QuWIDClRERc">
+                                <img src="img/multimedia/thumb-practice2.png" alt="YouTube 영상 썸네일">
+
+                                <p>'Arabian Nights' 연습 영상 - 김준수, 정원영, 이성경 외</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="open-modal" data-video="https://www.youtube.com/embed/BzDqsyHMZ9I">
+                                <img src="img/multimedia/thumb-opening.png" alt="YouTube 영상 썸네일">
+
+                                <p>Opening Night 영상 공개</p>
+                            </a>
                         </li>
                     </ul>
 
-                    <ul>
-                        <li>
-                            <video controls>
-                                <source src="video/staff_interview1.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/staff_interview2.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/staff_interview3.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/practice1.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/practice2.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/audition.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/aladdin_opening_night.mp4">
-                            </video>
-                        </li>
-                        <li>
-                            <video controls>
-                                <source src="video/spot1.mp4">
-                            </video>
-                        </li>
-                    </ul>
 
-                    <div id="">
+                    <!-- 모달 -->
+                    <div id="videoModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

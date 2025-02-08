@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*CONTACT***************************************************************/
+section .sub-main {
+    background: url(../img/auditions_header.jpg) no-repeat center top/cover;
+}
+
+article.tit {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.tit h3 {
+    display: inline-block;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3a5575;
+}
+
+/*게시판*****************************************************************************/
+.board_wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 120px;
+    color: #3a5575;
+}
+
+.board_wrap a {
+    color: #3a5575;
+    transition: all 0.3s;
+}
+
+.board_wrap a:hover {
+    color: #00baf2;
+}
+
+.board_list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.board_list .row {
+    display: flex;
+    border-bottom: 1px solid #00baf2;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.board_list .row~.row:hover {
+    background-color: #dff5ff;
+}
+
+.board_list .row>div {
+    text-align: center;
+    padding: 10px;
+}
+
+.board_list .row .num {
+    width: 5%;
+}
+
+.board_list .row .title {
+    width: 85%;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.board_list .row:first-child .title {
+    text-align: center;
+}
+
+.board_list .row .date {
+    width: 10%;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.board_wrap .btn {
+    text-align: center;
+}
+
+.board_wrap .more-btn {
+    color: #fff;
+}

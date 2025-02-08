@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     var mainSlide; //인터벌용 변수
     mainSlide = setInterval(videoSlide, 10000);
+
 });
 
 // fadeSlide 함수 만들기 
@@ -25,18 +26,25 @@ function videoSlide() {
         //첫 번째 슬라이드의 z-index 제거
         firstSlide.removeClass('active');
     });
-}
 
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+}
 
 //PRODUCTIONS 왼쪽 wrap 플로우 효과
 var flowPosterL; //인터벌 담을 변수
 
-$(document).ready(function(){
-    flowPosterL = setInterval(flowL,40); //시간조절
+$(document).ready(function () {
+    flowPosterL = setInterval(flowL, 40); //시간조절
 
-    $('.poster-wrap.left li').hover(function(){
+    $('.poster-wrap.left li').hover(function () {
         clearInterval(flowPosterL); //호버시 멈춤
-    }, function(){ //호버아닐 때 정상작동
+    }, function () { //호버아닐 때 정상작동
         flowPosterL = setInterval(flowL, 40);
     });
 });
@@ -74,13 +82,13 @@ function flowL() {
 
 var flowPosterR; //인터벌 담을 변수
 var boxHeightR = 0; //포스터 박스의 높이를 담을 변수!
-var down; 
+var down;
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     //초기설정 - 맨 마지막 포스터를 맨 앞으로 이동, top값 변경 
 
-    boxHeightR = $('.poster-wrap.right li').last().outerHeight(true); 
+    boxHeightR = $('.poster-wrap.right li').last().outerHeight(true);
     console.log('문서가 로딩되었을 때 박스값: ' + boxHeightR);
 
     $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
@@ -92,27 +100,27 @@ $(document).ready(function(){
     //맨 뒤 포스터를 맨 앞으로 준비시킨 다음 flow 실행! (왼쪽 poster는 flow 실행 후 준비시키기)
     flowPosterR = setInterval(flowR, 40);
 
-    $('.poster-wrap.right li').hover(function(){
+    $('.poster-wrap.right li').hover(function () {
         clearInterval(flowPosterR);
-    }, function(){
+    }, function () {
         flowPosterR = setInterval(flowR, 40);
     });
 });
 
 //var down = 0;
 
-function flowR (){
+function flowR() {
 
     //down값을 계속 감소시켜 0에 근접하게 = 아래로 이동
     down--;
     console.log(down);
 
-    if(-down >= 0){
+    if (-down >= 0) {
 
         //console.log('테스트출력');
         //맨 앞으로 이동시켰던 포스터가 다 지나가면(top 값이 0이 되면) 다시 포스터 높이값만큼 top값을 변경하여 두번째 포스터부터 보이도록 하기
 
-        boxHeightR = $('.poster-wrap.right li').last().outerHeight(true); 
+        boxHeightR = $('.poster-wrap.right li').last().outerHeight(true);
 
         $('.poster-wrap.right').prepend($('.poster-wrap.right li').last()).css({
             top: -boxHeightR

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*본문 페이지************************************************************/
+section article:last-child {
+    margin: 60px 0 60px;
+}
+
+section .info {
+    max-width: 600px;
+    /* 최대 너비 지정 */
+    width: 90%;
+    /* 반응형 설정 */
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section .info .tit {
+    margin: 30px 0 50px;
+}
+
+section .info h3 {
+    font-size: 1.625rem;
+    font-family: 'NanumSquareBold';
+    margin-bottom: 10px;
+}
+
+section .info .img-box img {
+    width: 100%;
+}
+
+section .info a {
+    margin: 40px 0 20px;
+    display: inline-block;
+    color: #3a5575;
+    transition: all 0.3s;
+}
+
+section .info a:hover {
+    color: #00baf2;
+    transition: all 0.3s;
+    text-decoration: underline;
+}
